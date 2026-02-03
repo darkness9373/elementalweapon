@@ -12,7 +12,8 @@
                     "use",
                     "click_jump",
                     "shift_click",
-                    "shift_jump"
+                    "shift_jump",
+                    "ultimate"
                 ]
             },
             "animations": {
@@ -22,9 +23,11 @@
                 "shadow_finished": "animation.item.shadow",
                 "shift_click": "controller.animation.shift_click",
                 "shift_jump": "controller.animation.shift_jump",
+                "ultimate": "controller.animation.ultimate",
                 "shadow_finished1": "animation.item.shadow1",
                 "shadow_finished2": "animation.item.shadow2",
-                "shadow_finished3": "animation.item.shadow3"
+                "shadow_finished3": "animation.item.shadow3",
+                "shadow_finished4": "animation.item.shadow4"
             }
         },
         "component_groups": {

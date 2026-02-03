@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.sand": {
+			"arrays": {
+				"textures": {
+				  "array.frames": [
+					"texture.sand1",
+					"texture.sand2",
+					"texture.sand3",
+					"texture.sand4",
+					"texture.sand5",
+					"texture.sand6",
+					"texture.sand7",
+					"texture.sand8",
+					"texture.sand9"
+					]
+				}
+			},
+			"geometry": "geometry.sand",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"temp.life_time=query.life_time*8.0;return array.frames[temp.life_time];"
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:clon",
+      "materials": {
+        "default": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/skills/cloni"
+      },
+      "geometry": {
+        "default": "geometry.cloning"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_alive"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.cloning.newas"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

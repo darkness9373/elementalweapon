@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:gama",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "sand1": "textures/entity/skills/mango/am1",
+        "sand2": "textures/entity/skills/mango/am2",
+        "sand3": "textures/entity/skills/mango/am3",
+        "sand4": "textures/entity/skills/mango/am4",
+        "sand5": "textures/entity/skills/mango/am5",
+        "sand6": "textures/entity/skills/mango/am6",
+        "sand7": "textures/entity/skills/sandre/sand5",
+        "sand8": "textures/entity/skills/sandre/sand5",
+        "sand9": "textures/entity/skills/sandre/sand5"
+      },
+      "geometry": {
+        "sand": "geometry.gama"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_moving"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.mango.new"
+      },
+      "render_controllers": [
+        "controller.render.sand"
+      ]
+    }
+  }
+}

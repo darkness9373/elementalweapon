@@ -63,6 +63,20 @@
             "sounds": [
                 "sounds/jalan"
             ]
+        },
+        "items.shadoulti": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadoulti"
+            ]
+        },
+        "items.flamor": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/flamor"
+            ]
         }
     }
 }
