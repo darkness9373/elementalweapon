@@ -1,0 +1,369 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mun.tpp": {
+			"loop": "hold_on_last_frame"
+		},
+		"animation.mun.fpp": {
+			"loop": true,
+			"bones": {
+				"shh": {
+					"rotation": [-65.48595, -54.98681, -2.38148],
+					"position": [3.92755, -11.39036, 18.29365]
+				}
+			}
+		},
+		"animation.mun.attack1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.625,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [0, 35, 0],
+						"0.25": [0, -25, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [-209.97286, 27.85348, -52.23705],
+						"0.2083": [-13.75863, 18.22584, -68.1543]
+					},
+					"position": [0, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, -62.5]
+					},
+					"position": [0, 0, 0]
+				},
+				"munu": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [20.33688, -29.24, -9.88101],
+						"0.125": [144.67179, -64.75858, -137.16221]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 13, 0]
+					}
+				},
+				"mu": {
+					"rotation": [18.17078, 13.48245, -355.24297],
+					"position": [0, 18, 0]
+				},
+				"shh": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0417": {
+					"effect": "moonslash22",
+					"locator": "munu"
+				},
+				"0.25": {
+					"effect": "moonsl",
+					"locator": "mu"
+				}
+			}
+		},
+		"animation.mun.attack2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.6667,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [0, -25, 0],
+						"0.25": [0, 20, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [-134.81005, -36.57173, 72.93642],
+						"0.25": [74.98904, 0.61344, 88.81498]
+					}
+				},
+				"munu": {
+					"rotation": [69.71513, -80.56555, -69.97151],
+					"position": [0, 12, 0]
+				},
+				"mu": {
+					"rotation": [359.63921, -15.18726, -359.01445],
+					"position": [0, 12, 0]
+				},
+				"shh": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "moonslash11",
+					"locator": "munu"
+				},
+				"0.1667": {
+					"effect": "moonsl",
+					"locator": "mu"
+				}
+			}
+		},
+		"animation.mun.attack3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.625,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [0, 35, 0],
+						"0.25": [0, -30, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [-157.33356, 38.21256, -154.8751],
+						"0.25": [-34.05074, -7.08415, -95.81734]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.125": [0, 0, 0],
+						"0.25": [0, 0, -67.5]
+					},
+					"position": [0, 0, 0]
+				},
+				"munu": {
+					"rotation": [169.72559, -52.64584, -182.66877],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 17, -10],
+						"0.25": [0, 17, -10]
+					}
+				},
+				"mu": {
+					"rotation": [7.75273, -36.65611, -15.51486],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.3125": [0, 5, 0]
+					}
+				},
+				"shh": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.125": {
+					"effect": "moonslash22",
+					"locator": "munu"
+				},
+				"0.3125": {
+					"effect": "moonsl",
+					"locator": "mu"
+				}
+			}
+		},
+		"animation.mun.attack4": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.25": [35, 0, 0],
+						"0.375": [-7.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, -3],
+						"0.25": [0, -3, -6],
+						"0.375": [0, 0, 1]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.25": [-70, 0, 92.5],
+						"0.375": [47.75318, 17.04679, 77.5908]
+					},
+					"position": [0, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.25": [-70, 0, -92.5],
+						"0.375": [52.31056, -20.25437, -77.52599]
+					},
+					"position": [0, 0, 0]
+				},
+				"munu": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [94.53359, -85.77822, -85.46641]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 4, 0]
+					}
+				},
+				"mu": {
+					"rotation": [4.22248, 4.65309, 9.42262],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.3125": [0, 7, 0]
+					}
+				},
+				"shh": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.25": {
+					"effect": "moonslash11",
+					"locator": "munu"
+				},
+				"0.3125": {
+					"effect": "moonsl",
+					"locator": "mu"
+				}
+			}
+		},
+		"animation.mun.lari": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.25,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"scale": [0, 0, 1]
+				},
+				"RightArm": {
+					"scale": [1, -0.1, 1]
+				},
+				"shh": {
+					"scale": 1
+				},
+				"LeftArm": {
+					"scale": [0, 0, 1]
+				},
+				"Head": {
+					"scale": [0, 0, 1]
+				},
+				"RightLeg": {
+					"scale": [0.2, 0, 1]
+				},
+				"LeftLeg": {
+					"scale": [1, 0, -0.1]
+				},
+				"root": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mun.skill1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.6579,
+			"override_previous_animation": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, -25, 0],
+						"0.3333": [0, 37.5, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0417": [-152.07769, -13.56596, 100.44934],
+						"0.3333": [51.83671, 14.59585, 71.82312]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.375": [40.58529, 2.66228, -50.94327]
+					}
+				}
+			}
+		},
+		"animation.mun.idle": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftLeg": {
+					"rotation": [0, 0, -5]
+				},
+				"RightLeg": {
+					"rotation": [0, 0, 7.5]
+				},
+				"Body": {
+					"rotation": [0, 10, 0]
+				},
+				"RightArm": {
+					"rotation": [-278.93707, 57.72882, -8.52342],
+					"position": [0.77954, -4.24059, 0.52139]
+				},
+				"shh": {
+					"rotation": [-0.6574, 0.0287, 172.54292],
+					"position": [2, -21, 0]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		},
+		"animation.mun.sneak": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftLeg": {
+					"rotation": [0, 0, -10]
+				},
+				"RightLeg": {
+					"rotation": [0, 0, 10]
+				},
+				"RightArm": {
+					"rotation": [-56.91122, -43.39816, 46.51698]
+				}
+			}
+		},
+		"animation.mun.sneak_walk": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"RightArm": {
+					"rotation": [-56.91122, -43.39816, 46.51698]
+				}
+			}
+		},
+		"animation.mun.walk": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"RightArm": {
+					"rotation": [0, 0, 7.5]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -5]
+				}
+			}
+		},
+		"animation.mun.run": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"root": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mun.pelari": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"RightArm": {
+					"rotation": [0, 0, 10]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -7.5]
+				}
+			}
+		}
+	}
+}

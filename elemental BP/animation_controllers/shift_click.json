@@ -1,7 +1,7 @@
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.shift_klik": {
+    "controller.animation.shift_click": {
       "initial_state": "default",
       "states": {
         "default": {
