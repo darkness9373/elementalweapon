@@ -213,7 +213,7 @@
                 ],
                 "0.2": [
                     "/inputpermission set @s movement disabled",
-                    "/playanimation @s animation.shado.rasengan"
+                    "/playanimation @s animation.shadow.rasengan"
                 ],
                 "1.24": [
                     "/tag @s add negli",

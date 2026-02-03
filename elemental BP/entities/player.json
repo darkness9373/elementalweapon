@@ -9,13 +9,19 @@
             "scripts": {
                 "animate": [
                     "attack",
-                    "use"
+                    "use",
+                    "click_jump",
+                    "shift_click"
                 ]
             },
             "animations": {
                 "attack": "controller.animation.basic_attack",
                 "use": "controller.animation.items.use",
-                "shadow_finished": "animation.item.shadow"
+                "click_jump": "controller.animation.click_jump",
+                "shadow_finished": "animation.item.shadow",
+                "shift_click": "controller.animation.shift_click",
+                "shadow_finished1": "animation.item.shadow1",
+                "shadow_finished2": "animation.item.shadow2"
             }
         },
         "component_groups": {

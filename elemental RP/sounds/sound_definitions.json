@@ -35,6 +35,27 @@
             "sounds": [
                 "sounds/shuri"
             ]
+        },
+        "items.shadash": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadash"
+            ]
+        },
+        "items.shadomundur": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadomundur"
+            ]
+        },
+        "items.shadomulti": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadomulti"
+            ]
         }
     }
 }
