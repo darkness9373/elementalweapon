@@ -28,6 +28,13 @@
             "sounds": [
                 "sounds/shadoslash4"
             ]
+        },
+        "items.shuri": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shuri"
+            ]
         }
     }
 }
