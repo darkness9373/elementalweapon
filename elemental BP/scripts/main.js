@@ -1,1 +1,1 @@
-import './.kudajawir'
+import './.kudajawir/knok'
