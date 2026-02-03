@@ -56,6 +56,13 @@
             "sounds": [
                 "sounds/shadomulti"
             ]
+        },
+        "items.jalan": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/jalan"
+            ]
         }
     }
 }

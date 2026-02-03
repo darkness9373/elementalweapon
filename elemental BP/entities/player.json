@@ -11,7 +11,8 @@
                     "attack",
                     "use",
                     "click_jump",
-                    "shift_click"
+                    "shift_click",
+                    "shift_jump"
                 ]
             },
             "animations": {
@@ -20,8 +21,10 @@
                 "click_jump": "controller.animation.click_jump",
                 "shadow_finished": "animation.item.shadow",
                 "shift_click": "controller.animation.shift_click",
+                "shift_jump": "controller.animation.shift_jump",
                 "shadow_finished1": "animation.item.shadow1",
-                "shadow_finished2": "animation.item.shadow2"
+                "shadow_finished2": "animation.item.shadow2",
+                "shadow_finished3": "animation.item.shadow3"
             }
         },
         "component_groups": {

@@ -21,3 +21,6 @@ execute at @e[type=rex:benedet] run damage @e[r=3,type=!item,type=!armor_stand,t
 execute as @e[tag=itas] at @s run particle rex:crowleft ~~~
 execute as @e[tag=itas] at @s run particle rex:crowright ~~~
 execute as @e[tag=itas] at @s run particle rex:crow ~~~
+
+execute as @e[tag=ups] at @s run tp @s @e[type=rex:ups,c=1]
+execute as @e[type=rex:ups] at @s run damage @e[r=3,type=!item,type=!xp_orb,type=!armor_stand,family=!damage,family=!proj,family=!real,tag=!seaking] 3 entity_attack entity @e[c=1,tag=seaking]
