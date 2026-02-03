@@ -1,0 +1,457 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.item.shadow": {
+            "animation_length": 7.4,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tag @s add shuriken",
+                    "/playsound items.shuri @a[r=30]",
+                    "/title @s actionbar §l§8Shuriken Throw",
+                    "/particle rex:shadon",
+                    "/summon rex:shuriken ~~1.3~ facing ^^^1000",
+                    "/summon rex:shuriken ~~1.3~ facing ^450^^1000",
+                    "/summon rex:shuriken ~~1.3~ facing ^-450^^1000",
+                    "/playanimation @s animation.plaguevo.skill1"
+                ],
+                "3.3": [
+                    "/tag @s remove shuriken"
+                ],
+                "7.2": [
+                    "/title @s actionbar §l§8(Shuriken Throw) Ready"
+                ]
+            }
+        },
+        "animation.item.shado1": {
+            "animation_length": 4.3,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/title @s actionbar §l§8Crow Dash Jutsu",
+                    "/playsound items.shadash @a[r=30]",
+                    "/particle rex:shadon",
+                    "/tag @s add itas"
+                ],
+                "0.1": [
+                    "/execute as @s at @s run scriptevent no:forward7",
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "0.2": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "0.3": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "0.4": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "0.5": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "0.6": [
+                    "/tag @s remove itas"
+                ],
+                "4.2": [
+                    "/title @s actionbar §l§8(Crow Dash Jutsu) Ready"
+                ]
+            }
+        },
+        "animation.item.shado3": {
+            "animation_length": 12.5,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound items.jalan @a[r=30]",
+                    "/title @s actionbar §l§8Shadow Ascension Slash",
+                    "/particle rex:masukshado",
+                    "/particle rex:crow",
+                    "/particle rex:shadon",
+                    "/scoreboard players set @s antiattack 3",
+                    "/summon rex:ups ~~7~ facing ^^^1000",
+                    "/tag @s add seaking"
+                ],
+                "0.25": [
+                    "/inputpermission set @s movement disabled",
+                    "/inputpermission set @s camera disabled",
+                    "/particle rex:masukshado",
+                    "/particle rex:crow"
+                ],
+                "0.5": [
+                    "/particle rex:masukshado",
+                    "/particle rex:crow"
+                ],
+                "0.75": [
+                    "/particle rex:masukshado",
+                    "/particle rex:crow"
+                ],
+                "1.0": [
+                    "/particle rex:masukshado",
+                    "/particle rex:crow"
+                ],
+                "1.2": [
+                    "/execute as @s at @s run scriptevent no:up3",
+                    "/particle rex:shadobulu",
+                    "/summon rex:cloni ~~~ facing ^^^1000",
+                    "/tag @s add itas",
+                    "/tag @e[r=6,c=2,type=!item,type=!xp_orb,type=!armor_stand,family=!damage,family=!proj,family=!real,tag=!seaking] add ups",
+                    "/particle rex:shadon",
+                    "/particle rex:crow"
+                ],
+                "1.4": [
+                    "/tag @s add ups"
+                ],
+                "1.5": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadomulti @a[r=30]",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:crowled",
+                    "/particle rex:shadopixama",
+                    "/particle rex:hittaj"
+                ],
+                "1.75": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "2.0": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:shadoslashma",
+                    "/particle rex:hittaja",
+                    "/particle rex:hittaj"
+                ],
+                "2.25": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "2.5": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "2.75": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "3.0": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "3.25": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "3.5": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "3.75": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "4.0": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "4.25": [
+                    "/particle rex:shadoslashm",
+                    "/playsound items.shadoslash1 @a[r=30]",
+                    "/particle rex:hittaj"
+                ],
+                "4.4": [
+                    "/tag @s remove seaking",
+                    "/tag @s remove ups",
+                    "/execute as @s at @s run scriptevent no:backward4",
+                    "/playsound items.shadash @a[r=30]",
+                    "/effect @s slow_falling 2 1 true",
+                    "/scoreboard players set @s antiattack 0"
+                ],
+                "4.5": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "4.6": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "4.7": [
+                    "/summon rex:cloni ~~~ facing ^^^1000"
+                ],
+                "4.8": [
+                    "/summon rex:cloni ~~~ facing ^^^1000",
+                    "/inputpermission set @s camera enabled",    
+                    "/inputpermission set @s movement enabled",
+                    "/tag @s remove itas"
+                ],
+                "5.4": [
+                    "/tag @e[c=2,tag=ups] remove ups"
+                ],
+                "12.45": [
+                    "/title @s actionbar §l§8(Shadow Ascension Slash) Ready"
+                ]
+            }
+        },
+        "animation.item.shado2": {
+            "animation_length": 9.5,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tag @s add shurie",
+                    "/execute as @s at @s run scriptevent no:backward4",
+                    "/playsound items.shadomundur @a[r=30]",
+                    "/particle rex:shadon",
+                    "/particle rex:crow",
+                    "/particle rex:crowbulu",
+                    "/title @s actionbar §l§8Shadow Pierce Jutsu",
+                    "/scoreboard players set @s antiattack 3"
+                ],
+                "0.2": [
+                    "/inputpermission set @s movement disabled",
+                    "/playanimation @s animation.shado.rasengan"
+                ],
+                "1.24": [
+                    "/tag @s add negli",
+                    "/particle rex:hittajstay",
+                    "/summon rex:cloni ~~~ facing ^^^1000",
+                    "/playsound items.shadash @a[r=30]",
+                    "/summon rex:benedet ~~~ facing ^^^1000",
+                    "/execute as @s at @s run scriptevent no:forward13"
+                ],
+                "1.28": [
+                    "/summon rex:clonis ~~~ facing ^^^1000",
+                    "/summon rex:benedet ~~~ facing ^^^1000",
+                    "/particle rex:hittajstay"
+                ],
+                "1.32": [
+                    "/summon rex:clonis ~~~ facing ^^^1000",
+                    "/summon rex:benedet ~~~ facing ^^^1000",
+                    "/particle rex:hittajstay"
+                ],
+                "1.36": [
+                    "/summon rex:clonis ~~~ facing ^^^1000",
+                    "/summon rex:benedet ~~~ facing ^^^1000",
+                    "/particle rex:hittajstay"
+                ],
+                "1.4": [
+                    "/particle rex:hittajstay"
+                ],
+                "1.44": [
+                    "/summon rex:clonis ~~~ facing ^^^1000",
+                    "/summon rex:benedet ~~~ facing ^^^1000",
+                    "/playsound items.shadomulti @a[r=30]",
+                    "/particle rex:hittajstay"
+                ],
+                "1.5": [
+                    "/tag @s remove negli",
+                    "/inputpermission set @s movement enabled",
+                    "/scoreboard players set @s antiattack 0"
+                ],
+                "4.3": [
+                    "/tag @s remove shurie"
+                ],
+                "9.4": [
+                    "/title @s actionbar §l§8(Shadow Pierce Jutsu) Ready"
+                ]
+            }
+        },
+        "animation.item.shado4": {
+            "animation_length": 29.7,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/title @s actionbar §l§8Endless Shadow Pierce Dance",
+                    "/playsound items.shadoulti @a[r=30]",
+                    "/playsound items.jalan @a[r=30]",
+                    "/tag @s add shadowi",
+                    "/particle rex:shadobawah",
+                    "/summon rex:shadotanda2 ~~8~ facing ^^^1000",
+                    "/effect @e[r=12,tag=!shadowi,type=!item,type=!armor_stand,type=!xp_orb,family=!damage,family=!real,family=!proj] slowness 15 4 true",
+                    "/summon rex:shadotanda1 ~~~ facing ^^^1000",
+                    "/scoreboard players set @s antiattack 3"
+                ],
+                "0.1": [
+                    "/inputpermission set @s movement disabled",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run camera @a[tag=shadowi,c=1] set minecraft:free pos ~5~10~ facing @s",
+                    "/inputpermission set @s camera disabled",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~~~9 facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~6~~6 facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~9~~ facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~6~~-6 facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~~~-9 facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~-6~~-6 facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~-9~~ facing @s",
+                    "/execute as @e[type=rex:shadotanda1,c=1] at @s run summon rex:clon ~-6~~6 facing @s"
+                ],
+                "0.5": [
+                    "/tag @s add shadobli",
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "0.6": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "0.8": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "0.9": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "1.1": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "1.2": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "1.4": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "1.5": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "1.7": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "1.8": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "2.0": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "2.1": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "2.3": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "2.4": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "2.6": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "2.7": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "2.9": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "3.0": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "3.2": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "3.3": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "3.5": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "3.6": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "3.8": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "3.9": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "4.1": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "4.2": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "4.4": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "4.5": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "4.7": [
+                    "/tp @s @r[type=rex:clon,c=1]"
+                ],
+                "4.8": [
+                    "/execute as @s at @s run scriptevent no:forward23",
+                    "/summon rex:gama ~~~ facing ^^^1000",
+                    "/particle rex:shadopix",
+                    "/playsound items.shadoslash1 @a[r=30]"
+                ],
+                "5.0": [
+                    "/camera @s clear",
+                    "/tp @s @e[type=rex:shadotanda1,c=1]"
+                ],
+                "5.1": [
+                    "/execute as @s at @s run scriptevent no:up3",
+                    "/effect @s resistance 2 3 true",
+                    "/playsound items.flamor @a[r=30]"
+                ],
+                "5.2": [
+                    "/tag @s add shadogebrak"
+                ],
+                "6.0": [
+                    "/scoreboard players set @s antiattack 0",
+                    "/tag @s remove shadobli",
+                    "/inputpermission set @s camera enabled",
+                    "/inputpermission set @s movement enabled"
+                ],
+                "9.5": [
+                    "/tag @s remove shadogebrak"
+                ],
+                "13.0": [
+                    "/tag @s remove shadowi"
+                ],
+                "29.65": [
+                    "/title @s actionbar §l§8(Endless Shadow Pierce Dance) Ready"
+                ]
+            }
+        }
+    }
+}

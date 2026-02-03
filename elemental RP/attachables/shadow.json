@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "drk:shadow",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"frame_0": "textures/entity/attachable/shadow/shadow1",
+				"frame_1": "textures/entity/attachable/shadow/shadow2",
+				"frame_2": "textures/entity/attachable/shadow/shadow3",
+				"frame_3": "textures/entity/attachable/shadow/shadow4",
+				"frame_4": "textures/entity/attachable/shadow/shadow5",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.shadow",
+				"on_back": "geometry.shadow_back"
+			},
+			"animations": {
+				"hold_first_person": "animation.shadow.fpp",
+				"hold_third_person": "animation.shadow.tpp",
+				"back": "animation.shadow_back"
+			},
+			"scripts": {
+				"animate": [
+			{
+				"hold_first_person": "c.is_first_person"
+			},
+			{
+				"hold_third_person": "!c.is_first_person"
+		    },
+			{
+				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'drk:shadow')"
+			}
+		]
+	},
+			"render_controllers": [
+				{"controller.render.default" : "q.is_item_name_any('slot.weapon.mainhand', 0, 'drk:shadow')"},
+				{"controller.render.render_shadow" : "q.is_item_name_any('slot.weapon.mainhand', 0, 'drk:shadow')"},
+				{"controller.render.animated_on_back" : "q.is_item_name_any('slot.weapon.offhand', 0, 'drk:shadow')"}
+			]
+		}
+	}
+}

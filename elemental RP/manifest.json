@@ -1,0 +1,21 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§l§8Elemental Weapon§r",
+    "description": "-",
+    "uuid": "3af96961-09b0-4444-ab3a-2515fa611231",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "metadata": {
+    "authors": ["Darkness9373"]
+  },
+  "modules": [
+    {
+      "description": "Resource Pack for Elemental Weapon",
+      "type": "resources",
+      "uuid": "df664f66-85c3-45c2-8c5e-0c9393aa6140",
+      "version": [1, 0, 0]
+    }
+  ]
+}

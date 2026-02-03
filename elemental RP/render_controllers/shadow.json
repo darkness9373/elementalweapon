@@ -1,0 +1,16 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+    "controller.render.shadow": {
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "geometry": "geometry.shadow",
+      "textures": [
+        "Texture.none"
+      ]
+    }
+  }
+}

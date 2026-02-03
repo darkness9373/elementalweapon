@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.items.use": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shadow_use": "(query.get_equipped_item_name == 'shadow') && (!query.is_sneaking) && (query.is_using_item)"
+            }
+          ],
+          "on_exit": [
+            "/tag @p remove custom"
+          ]
+        },
+        "shadow_use": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "shadow_finished"
+          ]
+        }
+      }
+    }
+  }
+}

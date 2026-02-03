@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.antiattack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "jawaawa_trigger": "variable.attack_time && query.scoreboard('antiattack') > 2"
+            }
+          ]
+        },
+        "jawaawa_trigger": {
+            "on_entry": [
+                "/title @s actionbar jawawa"
+            ],
+          "transitions": [
+            {
+              "default": "!variable.attack_time && query.scoreboard('antiattack') <= 2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

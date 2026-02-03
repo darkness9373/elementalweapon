@@ -1,0 +1,7 @@
+{
+  "texture_data": {
+    "shadow": {
+      "textures": "textures/items/shadow.png"
+    }
+  }
+}

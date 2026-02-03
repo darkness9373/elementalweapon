@@ -1,0 +1,170 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.basic_attack": {
+            "states": {
+                "default": {
+                    "on_entry": [
+                        "/tag @s remove no_delay"
+                    ],
+                    "on_exit": [
+                        "/tag @s add no_delay"
+                    ],
+                    "transitions": [
+                        {
+                            "default2": "variable.attack_time"
+                        }
+                    ]
+                },
+                "default2": {
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "antiattack1": "query.scoreboard('antiattack') >= 2 && variable.attack_time && !query.is_sneaking"
+                        },
+                        {
+                            "attack_shado1": "variable.attack_time && !query.is_sneaking && !query.is_jumping && query.scoreboard('antiattack') <= 2 && q.get_equipped_item_name == 'shadow'"
+                        }
+                    ]
+                },
+                "antiattack1": {
+                    "on_entry": [
+                        "/title @s actionbar §cYou cant use basic attack right now!"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "antiattack2": "variable.attack_time && query.scoreboard('antiattack') >= 2"
+                        },
+                        {
+                            "default": "!variable.attack_time && query.scoreboard('antiattack') <= 2"
+                        }
+                    ]
+                },
+                "antiattack2": {
+                    "on_entry": [
+                        "/title @s actionbar §cYou cant use basic attack right now!"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "antiattack1": "variable.attack_time && query.scoreboard('antiattack') >= 2"
+                        },
+                        {
+                            "default": "!variable.attack_time && query.scoreboard('antiattack') <= 2"
+                        }
+                    ]
+                },
+                "attack_shado1": {
+                    "on_entry": [
+                        "/execute as @s at @s run scriptevent no:forward1",
+                        "/particle rex:crowright~~~",
+                        "/playsound items.shadoslash1 @a[r=30]",
+                        "/particle rex:shadon",
+                        "/particle rex:shadopix~~~",
+                        "/playanimation @s animation.shadow.attack1",
+                        "/tag @s add shudo",
+                        "/execute at @e[r=4,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:hittajni",
+                        "/damage @e[r=3,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove shudo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_shado2": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 12"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_shado2": {
+                    "on_entry": [
+                        "/playsound items.impsemua @a[r=30]",
+                        "/playanimation @s animation.shadow.attack2",
+                        "/particle rex:crowleft~~~",
+                        "/playsound items.shadoslash2 @a[r=30]",
+                        "/particle rex:shadon",
+                        "/particle rex:shadopix~~~",
+                        "/execute as @s at @s run scriptevent no:forward1",
+                        "/tag @s add shudo",
+                        "/damage @e[r=3,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/execute at @e[r=4,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:hittajni",
+                        "/tag @s remove shudo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_shado3": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 12"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_shado3": {
+                    "on_entry": [
+                        "/playsound items.basicaw @a[r=30]",
+                        "/execute as @s at @s run scriptevent no:upforward3",
+                        "/tag @s add shudo",
+                        "/particle rex:shadon",
+                        "/playsound items.shadoslash3 @a[r=30]",
+                        "/particle rex:shadopix~~~",
+                        "/playanimation @s animation.shadow.attack3",
+                        "/execute at @e[r=4,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:hittajni",
+                        "/damage @e[r=4,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove shudo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_shado4": "variable.attack_time && query.scoreboard('attack_delay') <=25 && query.scoreboard('attack_delay') >= 14"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_shado4": {
+                    "on_entry": [
+                        "/playsound items.shadoslash2 @a[r=30]",
+                        "/execute as @s at @s run scriptevent no:forward6",
+                        "/camerashake add @s 0.5 0.5 positional",
+                        "/particle rex:shadon",
+                        "/particle rex:shadopix~~~",
+                        "/particle rex:crowled",
+                        "/playsound items.shadoslash4 @a[r=30]",
+                        "/playanimation @s animation.shadow.attack4",
+                        "/tag @s add shudo",
+                        "/execute at @e[r=4,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:hittajni",
+                        "/damage @e[r=5,tag=!shudo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove shudo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_shado1": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 12"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

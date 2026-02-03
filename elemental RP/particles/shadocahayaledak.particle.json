@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "rex:shadocahayaledak",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/cahaya"
+			}
+		},
+		"events": {
+			"event": {
+				"particle_effect": {
+					"effect": "rex:shadopetir",
+					"type": "emitter"
+				}
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 12
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_lifetime_events": {
+				"creation_event": "event"
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.3,0.5)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(-180,180)"
+			},
+			"minecraft:particle_initial_speed": 0.1,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["1+(variable.particle_age*23)", "1+(variable.particle_age*23)"],
+				"facing_camera_mode": "lookat_direction",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 16,
+					"uv": [0, 0],
+					"uv_size": [16, 16]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age",
+					"gradient": {
+						"0.0": "#00020202",
+						"0.19": "#FF000000",
+						"0.4": "#FF1A1A1A"
+					}
+				}
+			}
+		}
+	}
+}

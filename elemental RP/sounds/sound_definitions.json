@@ -1,0 +1,33 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "items.shadoslash1": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadoslash1"
+            ]
+        },
+        "items.shadoslash2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadoslash2"
+            ]
+        },
+        "items.shadoslash3": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadoslash3"
+            ]
+        },
+        "items.shadoslash4": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/shadoslash4"
+            ]
+        }
+    }
+}
