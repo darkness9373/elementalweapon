@@ -17,7 +17,8 @@
             "geometry": {
                 "default": "geometry.humanoid.custom",
                 "cape": "geometry.cape",
-                "shadow": "geometry.shadow"
+                "shadow": "geometry.shadow",
+                "blufeng": "geometry.bluf"
             },
             "particle_effects": {
                 "shadoslash1": "rex:shadoslash2",
@@ -49,7 +50,8 @@
                     "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
                     "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
                     "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
-                    "variable.shadow = query.get_equipped_item_name('main_hand') == 'drk:shadow';"
+                    "variable.shadow = query.get_equipped_item_name('main_hand') == 'drk:shadow';",
+                    "variable.blueflame = query.get_equipped_item_name('main_hand') == 'rex:bluf';"
                 ],
                 "animate": [
                     {
@@ -57,6 +59,12 @@
                     },
                     {
                         "shadowac": "variable.shadow && !variable.is_first_person"
+                    },
+                    {
+                        "bluf": "variable.blueflame && variable.is_first_person"
+                    },
+                    {
+                        "blufac": "variable.blueflame && !variable.is_first_person"
                     },
                     {
                         "root": "(1.0)"
@@ -139,11 +147,21 @@
                 "shadow_sneak_walk": "animation.shadow.sneak_walk",
                 "shadow_run": "animation.shadow.run",
                 "shadow_idle": "animation.shadow.idle",
+                "bluf": "animation.bluf.fpp",
+                "blufac": "controller.animation.blufac",
+                "bluf_walk": "animation.bluf.walk",
+                "bluf_sneak": "animation.bluf.sneak",
+                "bluf_sneak_walk": "animation.bluf.sneak_walk",
+                "bluf_run": "animation.bluf.run",
+                "bluf_idle": "animation.bluf.idle",
                 "crawling.legs": "animation.player.crawl.legs"
             },
             "render_controllers": [
                 {
                     "controller.render.shadow": "variable.shadow"
+                },
+                {
+                    "controller.render.blufeng": "variable.blueflame"
                 },
                 {
                     "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"

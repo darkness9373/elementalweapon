@@ -2,6 +2,9 @@
   "texture_data": {
     "shadow": {
       "textures": "textures/items/shadow.png"
+    },
+    "bluf": {
+      "textures": "textures/items/bluf.png"
     }
   }
 }

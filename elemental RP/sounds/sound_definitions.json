@@ -77,6 +77,13 @@
             "sounds": [
                 "sounds/flamor"
             ]
+        },
+        "items.blufb1": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufb1"
+            ]
         }
     }
 }

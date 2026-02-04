@@ -26,6 +26,9 @@
                         },
                         {
                             "attack_shado1": "variable.attack_time && !query.is_sneaking && !query.is_jumping && query.scoreboard('antiattack') <= 2 && q.get_equipped_item_name == 'shadow'"
+                        },
+                        {
+                            "attack_bluf1": "variable.attack_time && !query.is_sneaking && query.scoreboard('antiattack') <= 2 && q.get_equipped_item_name == 'bluf'"
                         }
                     ]
                 },
@@ -158,6 +161,105 @@
                     "transitions": [
                         {
                             "attack_shado1": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 12"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_bluf1": {
+                    "on_entry": [
+                        "/playsound items.blufb1 @a[r=30]",
+                        "/playanimation @s animation.bluf.attack1",
+                        "/particle rex:bluf_slash ~ ~ ~",
+                        "/tag @s add blufo",
+                        "/execute at @s[tag=mode] run particle rex:modebasic ^^1^1",
+                        "/execute as @s at @s run scriptevent no:forward1",
+                        "/execute at @s[tag=mode] run summon rex:jembu1 ^^^ facing ^^^1000",
+                        "/particle rex:blupch2 ~ ~ ~",
+                        "/damage @e[r=3,tag=!blufo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove blufo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_bluf2": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 10"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_bluf2": {
+                    "on_entry": [
+                        "/playsound items.blufb2 @a[r=30]",
+                        "/playanimation @s animation.bluf.attack2",
+                        "/tag @s add blufo",
+                        "/execute at @s[tag=mode] run particle rex:modebasic ^^1^1",
+                        "/execute as @s at @s run scriptevent no:forward1",
+                        "/execute at @s[tag=mode] run summon rex:jembu2 ^^^ facing ^^^1000",
+                        "/particle rex:blupch2 ~ ~ ~",
+                        "/damage @e[r=3,tag=!blufo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove blufo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_bluf3": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 10"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_bluf3": {
+                    "on_entry": [
+                        "/playsound items.blufskill22 @a[r=30]",
+                        "/playanimation @s animation.bluf.attack3",
+                        "/tag @s add blufo",
+                        "/execute at @s[tag=mode] run particle rex:modebasic ^^1^1",
+                        "/execute as @s at @s run scriptevent no:forward1",
+                        "/particle rex:blupch2 ~ ~ ~",
+                        "/damage @e[r=3,tag=!blufo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove blufo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_bluf4": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 10"
+                        },
+                        {
+                            "default": "query.scoreboard('attack_delay') >= 25"
+                        }
+                    ]
+                },
+                "attack_bluf4": {
+                    "on_entry": [
+                        "/playsound items.blufb4 @a[r=30]",
+                        "/playanimation @s animation.bluf.attack4",
+                        "/tag @s add blufo",
+                        "/tag @s add jancok",
+                        "/particle rex:blupch2 ~ ~ ~",
+                        "/execute at @s[tag=!mode] run summon rex:bsc ^^^ facing ^^^1000",
+                        "/execute as @s at @s run scriptevent no:forward3",
+                        "/execute at @s[tag=mode] run summon rex:bonar ^^^0.4 facing ^^^1000",
+                        "/execute at @s[tag=mode] run particle rex:modebasic ^^1^1",
+                        "/camerashake add @s 0.5 0.5 positional",
+                        "/damage @e[r=3,tag=!blufo,type=!item,type=!armor_stand,type=!xp_orb] 8 entity_attack entity @s",
+                        "/tag @s remove blufo"
+                    ],
+                    "on_exit": [
+                        "/scoreboard players set @s attack_delay 0"
+                    ],
+                    "transitions": [
+                        {
+                            "attack_bluf1": "variable.attack_time && query.scoreboard('attack_delay') <= 25 && query.scoreboard('attack_delay') >= 10"
                         },
                         {
                             "default": "query.scoreboard('attack_delay') >= 25"
