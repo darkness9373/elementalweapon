@@ -8,7 +8,7 @@
 				"enchanted": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/blueflame",
+				"default": "textures/entity/attachable/bluf",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
@@ -29,7 +29,7 @@
 				"hold_third_person": "!c.is_first_person"
 		    },
 			{
-				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'drk:blueflame')"
+				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:bluf')"
 			}
 		]
 	},

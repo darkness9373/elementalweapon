@@ -8,6 +8,9 @@
           "transitions": [
             {
               "shadow_use4": "(query.get_equipped_item_name == 'shadow') && (query.is_sneaking) && (query.is_using_item)"
+            },
+            {
+              "bluf_use4": "(query.get_equipped_item_name == 'bluf') && (query.is_sneaking) && (query.is_using_item)"
             }
           ],
           "on_exit": [
@@ -22,6 +25,16 @@
           ],
           "animations": [
             "shadow_finished4"
+          ]
+        },
+        "bluf_use4": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "bluf_finished4"
           ]
         }
       }

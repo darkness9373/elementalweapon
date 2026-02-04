@@ -84,6 +84,90 @@
             "sounds": [
                 "sounds/blufb1"
             ]
+        },
+        "items.blufb2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufb2"
+            ]
+        },
+        "items.blufb4": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufb4"
+            ]
+        },
+        "items.blufskill22": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill22"
+            ]
+        },
+        "items.blufskill1": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill1"
+            ]
+        },
+        "items.blufskill1m": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill1m"
+            ]
+        },
+        "items.blufskill2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill2"
+            ]
+        },
+        "items.blufskill2m": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill2m"
+            ]
+        },
+        "items.blufskill3": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill3"
+            ]
+        },
+        "items.blufskill3m": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufskill3m"
+            ]
+        },
+        "items.blufulti": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/blufulti"
+            ]
+        },
+        "items.uppercut": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/uppercut"
+            ]
+        },
+        "items.sho": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/sho"
+            ]
         }
     }
 }

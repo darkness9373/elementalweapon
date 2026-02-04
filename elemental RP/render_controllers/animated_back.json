@@ -6,19 +6,18 @@
 				"textures": {
 					"array.textures": [
 						"texture.frame_0",
-				    	"texture.frame_1",
-				    	"texture.frame_2",
-			        	"texture.frame_3",
-				    	"texture.frame_4"
+						"texture.frame_1",
+						"texture.frame_2",
+						"texture.frame_3",
+						"texture.frame_4"
 					]
 				}
 			},
 			"geometry": "Geometry.on_back",
 			"materials": [
-				{
-					"*": "variable.is_enchanted?material.enchanted:material.default"
-				}
-			],
+			{
+				"*": "variable.is_enchanted?material.enchanted:material.default"
+			}],
 			"textures": [
 				"temp.life_time=query.life_time*10;return array.textures[temp.life_time];",
 				"texture.enchanted"

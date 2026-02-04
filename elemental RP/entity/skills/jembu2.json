@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:jembu2",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/skills/tinjublu"
+      },
+      "geometry": {
+        "default": "geometry.jembu"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_moving"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.jembu.basic2"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

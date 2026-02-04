@@ -1,0 +1,249 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item.bluf": {
+      "animation_length": 7.9,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add tid",
+          "/title @s[tag=!mode] actionbar §l§1Quick Punch",
+          "/title @s[tag=mode] actionbar §l§1Burning Punch",
+          "/particle rex:blufirebuka",
+          "/playanimation @s animation.bluf.skill1"
+        ],
+        "0.45": [
+          "/particle rex:tlp"
+        ],
+        "0.5": [
+          "/tp @s @e[r=15,c=1,tag=!tid]",
+          "/execute at @s[tag=!mode] run playsound items.blufskill1 @a[r=30] ",
+          "/execute at @s[tag=mode] run playsound items.blufskill1m @a[r=30] "
+        ],
+        "0.58": [
+          "/particle rex:impas3 ^^1^1",
+          "/particle rex:bluk",
+          "/camerashake add @s 0.3 0.5 positional",
+          "/execute at @s[tag=mode] run particle rex:modebasic1 ~~1~",
+          "/effect @e[r=4,tag=!tid] slowness 2 2 true",
+          "/execute at @s[tag=mode] run tag @e[tag=!tid,r=3] add kbg",
+          "/execute at @s[tag=mode] run effect @e[r=4,tag=!tid] slowness 5 5 true",
+          "/execute at @s run damage @e[r=3,tag=!tid] 10 entity_attack @s"
+        ],
+        "0.65": [
+          "/execute at @s[tag=mode] run summon rex:mmj ^^1^-1 facing ^^^1000",
+          "/execute at @s[tag=mode] run summon rex:hgc ^^1^6 facing ^^^1000",
+          "/playanimation @s[tag=mode] animation.bluf.sembur"
+        ],
+        "5.8": [
+          "/tag @e remove kbg"
+        ],
+        "7.8": [
+          "/tag @s remove tid",
+          "/title @s[tag=!mode] actionbar §l§1(Quick Punch) Ready",
+          "/title @s[tag=mode] actionbar §l§1(Burning Punch) Ready"
+        ]
+      }
+    },
+    "animation.item.bluf1": {
+      "animation_length": 1.0,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/camerashake add @s 0.3 0.5 positional",
+          "/title @s actionbar §l§1Uppercut",
+          "/execute at @s run playsound items.uppercut @a[r=30] ",
+          "/tag @s add upp",
+          "/summon rex:jembu ^^^ facing ^^^1000"
+        ],
+        "0.2": [
+          "/camerashake add @s 0.3 0.5 positional",
+          "/effect @e[r=4,type=!rex:jembu,tag=!upp,family=!damage] levitation 1 43 true",
+          "/particle rex:blutajam",
+          "/particle rex:fbatas",
+          "/execute as @s at @s run scriptevent no:up2n5"
+        ],
+        "0.4": [
+          "/effect @e[r=10,type=!rex:jembu] levitation 0 0 true",
+          "/effect @e[r=10,type=!rex:jembu] slow_falling 3 2 true",
+          "/effect @s resistance 4 2 true"
+        ],
+        "0.7": [
+          "/tag @s remove upp"
+        ]
+      }
+    },
+    "animation.item.bluf2": {
+      "animation_length": 15.1,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add tinju",
+          "/title @s[tag=!mode] actionbar §l§1Punch Barrage",
+          "/scoreboard players set @s antiattack 3",
+          "/effect @s resistance 4 1 true",
+          "/title @s[tag=mode] actionbar §l§1Burning Barrage"
+        ],
+        "0.25": [
+          "/playanimation @s animation.bluf.pukul",
+          "/execute at @s run playsound items.blufskill2 @a[r=30] ",
+          "/summon rex:tinjublu ~~~ facing^^^1000",
+          "/tag @s add kamb",
+          "/particle rex:shockblue^^1^1",
+          "/execute at @s[tag=mode] run particle rex:pler",
+          "/execute at @s[tag=mode] run particle rex:fnyeb"
+        ],
+        "3.1": [
+          "/execute at @s[tag=mode] run particle rex:modebasic1 ^^1^0.5"
+        ],
+        "3.3": [
+          "/summon rex:tmj ~~1~ facing ^^^1000",
+          "/execute at @s run playsound items.blufskill22 @a[r=30] ",
+          "/execute at @s[tag=mode] run playsound items.blufskill2m @a[r=30] ",
+          "/execute at @s[tag=!mode] run particle rex:modebasic",
+          "/execute at @s[tag=!mode] run particle rex:biruledakcil ^^1^1",
+          "/execute at @s[tag=mode] run particle rex:biruledak1 ^^1^1",
+          "/scoreboard players set @s antiattack 0",
+          "/execute at @s[tag=mode] run particle rex:bluimpekmode1 ^^1^1",
+          "/camerashake add @s 0.5 0.5 positional",
+          "/particle rex:bluk",
+          "/tag @s remove kamb",
+          "/tag @e[tag=!tinju,r=3] add kbg"
+        ],
+        "3.6": [
+          "/execute at @s[tag=mode] run summon rex:1mode ^^1^-2 facing ^^^1000"
+        ],
+        "6.3": [
+          "/tag @e remove kbg",
+          "/tag @s remove tinju"
+        ],
+        "15.0": [
+          "/title @s[tag=!mode] actionbar §l§1(Punch Barrage) Ready",
+          "/title @s[tag=mode] actionbar §l§1(Burning Barrage) Ready"
+        ]
+      }
+    },
+    "animation.item.bluf3": {
+      "animation_length": 14.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add nai",
+          "/playanimation @s animation.bluf.dsh",
+          "/execute at @s run playsound items.blufskill2m @a[r=30] ",
+          "/scoreboard players set @s antiattack 3",
+          "/title @s[tag=!mode] actionbar §l§1Dragon Smash",
+          "/title @s[tag=mode] actionbar §l§1Burning Smash",
+          "/summon custom:knockss ^^^-1",
+          "/particle rex:blufiretutup1",
+          "/execute as @s at @s run scriptevent no:up2"
+        ],
+        "0.2": [
+          "/effect @s levitation 0 0 true"
+        ],
+        "1.18": [
+          "/effect @s resistance 1 2 true",
+          "/particle rex:blufiremini",
+          "/execute at @s run playsound items.blufskill3 @a[r=30] ",
+          "/particle rex:retakl",
+          "/particle rex:blufirebuka",
+          "/camerashake add @s 0.3 0.5 positional",
+          "/particle rex:biruledakcil",
+          "/execute at @s[tag=mode] run particle rex:biruledak1",
+          "/execute at @s[tag=mode] run particle rex:retakblu",
+          "/execute at @s[tag=mode] run particle rex:blufirenyebar",
+          "/particle rex:bluk",
+          "/execute at @s[tag=!mode] run damage @e[tag=!nai,r=12] 20 projectile entity @s",
+          "/execute at @s[tag=mode] run damage @e[tag=!nai,r=12] 30 projectile entity @s"
+        ],
+        "1.5": [
+          "camerashake add @s 0.3 0.5 positional",
+          "/execute at @s[tag=mode] run playsound items.blufskill3m @a[r=30] ",
+          "/execute at @s[tag=mode] run summon rex:burr",
+          "/scoreboard players set @s antiattack 0",
+          "/execute at @s[tag=mode] run particle rex:bwhbiru",
+          "/execute at @s[tag=mode] run particle rex:blufirenyebarhd"
+        ],
+        "7.0": [
+          "/tag @s remove nai"
+        ],
+        "19.4": [
+          "/title @s[tag=!mode] actionbar §l§1(Dragon Smash) Ready",
+          "/title @s[tag=mode] actionbar §l§1(Burning Smash) Ready"
+        ]
+      }
+    },
+    "animation.item.bluf4": {
+      "animation_length": 69.1,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/particle rex:blulti2",
+          "/execute at @s run playsound items.blufulti @a[r=30] ",
+          "/title @s actionbar §l§1Burn Mode",
+          "/scoreboard players set @s antiattack 3",
+          "/effect @s resistance 10 1 true"
+        ],
+        "0.1": [
+          "/inputpermission set @s movement disabled"
+        ],
+        "5.0": [
+          "/particle rex:blufireturun1",
+          "/particle rex:fnyeb"
+        ],
+        "5.5": [
+          "/particle rex:blufireturun2"
+        ],
+        "13.0": [
+          "/particle rex:biruledak1",
+          "/execute at @s run playsound items.sho @a[r=30] ",
+          "/inputpermission set @s movement enabled",
+          "/effect @s strength 30 1 true",
+          "/effect @s health_boost 30 6 true",
+          "/scoreboard players set @s antiattack 0",
+          "/particle rex:blufirenyebarhd~~~",
+          "/tag @s add mode"
+        ],
+        "47.0": [
+          "/particle rex:blufiremini",
+          "/particle rex:blufiremini~~1~",
+          "/particle rex:blufiremini~~2~"
+        ],
+        "48.0": [
+          "/tag @s remove mode"
+        ],
+        "69.0": [
+          "/title @s[tag=!mode] actionbar §l§1(Burning Mode) Ready"
+        ]
+      }
+    },
+    "animation.item.munrun": {
+      "animation_length": 1.1,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add klikrun",
+          "/particle rex:munbwhhd",
+          "/tag @e[r=10,tag=!klikrun,c=1,type=!item,type=!armor_stand,type=!xp_orb] add tpken"
+        ],
+        "0.2": [
+          "/playsound items.pasifmun @a[r=30]"
+        ],
+        "0.5": [
+          "/tp @s @e[tag=tpken]",
+          "/particle rex:munbwhhd",
+          "/particle rex:moonslash3",
+          "/particle rex:munslash",
+          "/particle rex:kdip",
+          "/damage @e[r=5,tag=!klikrun] 10 entity_attack @s",
+          "/effect @e[r=5,tag=!klikrun] slowness 2 3 true",
+          "/effect @e[r=5,tag=!klikrun] blindness 2 3 true"
+        ],
+        "1.0": [
+          "/tag @s remove klikrun",
+          "/tag @e remove tpken"
+        ]
+      }
+    }
+  }
+}

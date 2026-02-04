@@ -27,19 +27,23 @@
                 "shadow_finished1": "animation.item.shadow1",
                 "shadow_finished2": "animation.item.shadow2",
                 "shadow_finished3": "animation.item.shadow3",
-                "shadow_finished4": "animation.item.shadow4"
+                "shadow_finished4": "animation.item.shadow4",
+                "bluf_finished": "animation.item.bluf",
+                "bluf_finished1": "animation.item.bluf1",
+                "bluf_finished2": "animation.item.bluf2",
+                "bluf_finished3": "animation.item.bluf3",
+                "bluf_finished4": "animation.item.bluf4"
             }
         },
         "component_groups": {
             "minecraft:add_bad_omen": {
                 "minecraft:spell_effects": {
                     "add_effects": [
-                        {
-                            "effect": "bad_omen",
-                            "duration": 6000,
-                            "display_on_screen_animation": true
-                        }
-                    ]
+                    {
+                        "effect": "bad_omen",
+                        "duration": 6000,
+                        "display_on_screen_animation": true
+                    }]
                 },
                 "minecraft:timer": {
                     "time": [
@@ -91,17 +95,16 @@
             },
             "minecraft:hurt_on_condition": {
                 "damage_conditions": [
-                    {
-                        "filters": {
-                            "test": "in_lava",
-                            "subject": "self",
-                            "operator": "==",
-                            "value": true
-                        },
-                        "cause": "lava",
-                        "damage_per_tick": 4
-                    }
-                ]
+                {
+                    "filters": {
+                        "test": "in_lava",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": true
+                    },
+                    "cause": "lava",
+                    "damage_per_tick": 4
+                }]
             },
             "minecraft:attack": {
                 "damage": 1
@@ -146,44 +149,42 @@
                 ],
                 "pull_in_entities": true,
                 "seats": [
-                    {
-                        "position": [
-                            0.4,
-                            -0.2,
-                            -0.1
-                        ],
-                        "min_rider_count": 0,
-                        "max_rider_count": 0,
-                        "lock_rider_rotation": 0
-                    },
-                    {
-                        "position": [
-                            -0.4,
-                            -0.2,
-                            -0.1
-                        ],
-                        "min_rider_count": 1,
-                        "max_rider_count": 2,
-                        "lock_rider_rotation": 0
-                    }
-                ]
+                {
+                    "position": [
+                        0.4,
+                        -0.2,
+                        -0.1
+                    ],
+                    "min_rider_count": 0,
+                    "max_rider_count": 0,
+                    "lock_rider_rotation": 0
+                },
+                {
+                    "position": [
+                        -0.4,
+                        -0.2,
+                        -0.1
+                    ],
+                    "min_rider_count": 1,
+                    "max_rider_count": 2,
+                    "lock_rider_rotation": 0
+                }]
             },
             "minecraft:scaffolding_climber": {},
             "minecraft:environment_sensor": {
                 "triggers": {
                     "filters": {
                         "all_of": [
-                            {
-                                "test": "has_mob_effect",
-                                "subject": "self",
-                                "value": "bad_omen"
-                            },
-                            {
-                                "test": "is_in_village",
-                                "subject": "self",
-                                "value": true
-                            }
-                        ]
+                        {
+                            "test": "has_mob_effect",
+                            "subject": "self",
+                            "value": "bad_omen"
+                        },
+                        {
+                            "test": "is_in_village",
+                            "subject": "self",
+                            "value": true
+                        }]
                     },
                     "event": "minecraft:trigger_raid"
                 }

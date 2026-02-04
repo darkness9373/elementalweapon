@@ -18,7 +18,7 @@
                 "default": "geometry.humanoid.custom",
                 "cape": "geometry.cape",
                 "shadow": "geometry.shadow",
-                "blufeng": "geometry.bluf"
+                "bluf": "geometry.bluf"
             },
             "particle_effects": {
                 "shadoslash1": "rex:shadoslash2",
@@ -29,7 +29,10 @@
                 "shadocahaya": "rex:shadocahaya",
                 "shadocahayaledak": "rex:shadocahayaledak",
                 "sundshado": "rex:sundshado",
-                "crowledmini": "rex:crowledmini"
+                "crowledmini": "rex:crowledmini",
+                "blu": "rex:blu",
+                "impas3": "rex:impas3",
+                "semburbiru": "rex:semburbiru"
             },
             "scripts": {
                 "scale": "0.9375",
@@ -51,7 +54,7 @@
                     "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
                     "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
                     "variable.shadow = query.get_equipped_item_name('main_hand') == 'drk:shadow';",
-                    "variable.blueflame = query.get_equipped_item_name('main_hand') == 'rex:bluf';"
+                    "variable.blufeng = query.get_equipped_item_name('main_hand') == 'rex:bluf';"
                 ],
                 "animate": [
                     {
@@ -61,10 +64,10 @@
                         "shadowac": "variable.shadow && !variable.is_first_person"
                     },
                     {
-                        "bluf": "variable.blueflame && variable.is_first_person"
+                        "bluf": "variable.blufeng && variable.is_first_person"
                     },
                     {
-                        "blufac": "variable.blueflame && !variable.is_first_person"
+                        "blufac": "variable.blufeng && !variable.is_first_person"
                     },
                     {
                         "root": "(1.0)"
@@ -161,7 +164,7 @@
                     "controller.render.shadow": "variable.shadow"
                 },
                 {
-                    "controller.render.blufeng": "variable.blueflame"
+                    "controller.render.blufeng": "variable.blufeng"
                 },
                 {
                     "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"

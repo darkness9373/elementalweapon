@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.items.shift": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "bluf_useshift": "(query.get_equipped_item_name == 'bluf') && (query.is_sneaking)"
+            }
+          ],
+          "on_exit": [
+            "/tag @p remove custom"
+          ]
+        },
+        "bluf_useshift": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "bluf_finishedshift"
+          ]
+        }
+      }
+    }
+  }
+}
