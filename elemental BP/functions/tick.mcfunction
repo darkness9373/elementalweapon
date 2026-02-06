@@ -173,6 +173,11 @@ execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] 
 execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] run particle rex:ataskuchi
 execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] run kill @s
 
+execute at @e[type=rex:arroic] run particle rex:jer1 ~~~
+execute at @e[type=rex:arroic] run particle rex:jer2 ~~~
+
+execute as @e[type=rex:arroic] at @s run tp @s ^^^1 true
+
 execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run effect @e[r=2,type=!item,type=!armor_stand,tag=!fss] slowness 2 6 true
 execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:pecahice
 execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:iceduar1
