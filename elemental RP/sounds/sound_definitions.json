@@ -189,6 +189,62 @@
             "sounds": [
                 "sounds/darknslash3"
             ]
+        },
+        "items.tamtik": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/tamtik"
+            ]
+        },
+        "items.spinda": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/spinda"
+            ]
+        },
+        "items.kuchi": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/kuchi"
+            ]
+        },
+        "items.kuchi2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/kuchi2"
+            ]
+        },
+        "items.garap": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/garap"
+            ]
+        },
+        "items.hand": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/hand"
+            ]
+        },
+        "items.combohol": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/combohol"
+            ]
+        },
+        "items.combohol2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/combohol2"
+            ]
         }
     }
 }

@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "rex:tamler",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/ang"
+			}
+		},
+		"events": {
+			"event": {
+				"particle_effect": {
+					"effect": "rex:tampak",
+					"type": "emitter"
+				}
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 10
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.1
+			},
+			"minecraft:emitter_lifetime_events": {
+				"creation_event": "event"
+			},
+			"minecraft:emitter_shape_sphere": {
+				"radius": 12,
+				"surface_only": true,
+				"direction": "inwards"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 0.5
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(180,-180)"
+			},
+			"minecraft:particle_initial_speed": 35,
+			"minecraft:particle_motion_dynamic": {
+				"linear_drag_coefficient": 1
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["2+(math.random(0.5,1))", "2+(math.random(0.5,1))"],
+				"facing_camera_mode": "rotate_xyz"
+			},
+			"minecraft:particle_motion_collision": {},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age",
+					"gradient": {
+						"0.0": "#C93A0460",
+						"0.22": "#99110123",
+						"0.47": "#960E002B",
+						"0.5": "#00180139"
+					}
+				}
+			}
+		}
+	}
+}

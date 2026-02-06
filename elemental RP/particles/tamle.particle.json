@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "rex:tamle",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/beluk"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 30
+			},
+			"minecraft:emitter_lifetime_looping": {
+				"active_time": 0.5
+			},
+			"minecraft:emitter_lifetime_events": {
+				"creation_event": "event"
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [0, 0.4, 0]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.4,0.5)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(180,-180)"
+			},
+			"minecraft:particle_initial_speed": 16,
+			"minecraft:particle_motion_dynamic": {
+				"linear_drag_coefficient": 1
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["1.5+variable.emitter_random_1", "1.5+variable.emitter_random_1"],
+				"facing_camera_mode": "rotate_xyz"
+			},
+			"minecraft:particle_motion_collision": {},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age",
+					"gradient": {
+						"0.0": "#3B3A0460",
+						"0.22": "#26110123",
+						"0.5": "#00180139"
+					}
+				}
+			}
+		}
+	}
+}
