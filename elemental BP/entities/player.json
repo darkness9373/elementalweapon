@@ -32,7 +32,12 @@
                 "bluf_finished1": "animation.item.bluf1",
                 "bluf_finished2": "animation.item.bluf2",
                 "bluf_finished3": "animation.item.bluf3",
-                "bluf_finished4": "animation.item.bluf4"
+                "bluf_finished4": "animation.item.bluf4",
+                "darkn_finished": "animation.item.darkn",
+                "darkn_finished1": "animation.item.darkn1",
+                "darkn_finished2": "animation.item.darkn2",
+                "darkn_finished3": "animation.item.darkn3",
+                "darkn_finished4": "animation.item.darkn4"
             }
         },
         "component_groups": {

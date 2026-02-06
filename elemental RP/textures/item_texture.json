@@ -5,6 +5,9 @@
     },
     "bluf": {
       "textures": "textures/items/bluf.png"
+    },
+    "darkn": {
+      "textures": "textures/items/darkn.png"
     }
   }
 }

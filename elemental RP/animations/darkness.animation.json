@@ -1,0 +1,352 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.darkness.fpp": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"kiriri": {
+					"rotation": [0.66203, -54.36622, -32.1443],
+					"position": [-1.85398, 8.39187, -17.61077]
+				},
+				"a2": {
+					"position": [8, 4, 0]
+				},
+				"kanana": {
+					"rotation": [29.51618, -64.23678, -70.44243],
+					"position": [-0.72751, -2.04788, 4.50299]
+				}
+			}
+		},
+		"animation.darkness.tpp": {
+			"loop": "hold_on_last_frame"
+		},
+		"animation.darkness.attack3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"kanana": {
+					"rotation": {
+						"0.0": [0, 0, -22.5],
+						"0.1667": [0, 0, -22.5],
+						"0.2083": [-65.18803, -3.1622, -15.69577]
+					},
+					"position": {
+						"0.1667": [0, 0, 0],
+						"0.2083": [-1.52567, 3.6833, -1.45107]
+					}
+				},
+				"a": {
+					"rotation": [-30, 0, 0],
+					"position": [0, 20.02628, 4.63397]
+				},
+				"rant2": {
+					"rotation": [47.5, 0, 0],
+					"position": [0, 19.28725, 6.16457]
+				},
+				"rant3": {
+					"rotation": [82.5, 0, 0],
+					"position": [0, 17.64367, 7.66166]
+				},
+				"rant4": {
+					"rotation": [112.5, 0, 0],
+					"position": [0, 15.16387, 8.66354]
+				},
+				"rant5": {
+					"rotation": [152.5, 0, 0],
+					"position": [0, 12.11429, 9.22553]
+				},
+				"rant6": {
+					"rotation": [175, 0, 0],
+					"position": [0, 8.45314, 8.37721]
+				},
+				"rant7": {
+					"rotation": [197.5, 0, 0],
+					"position": [0, 5.6695, 6.18172]
+				},
+				"rant": {
+					"rotation": [47.5, 0, 0],
+					"position": [0, 20.55025, 4.76983]
+				},
+				"Body": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.1667": [0, -17.5, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [-187.31092, 6.79382, -86.81542],
+						"0.2083": [-44.81092, 6.79382, -86.81542]
+					}
+				},
+				"srt": {
+					"rotation": [0, 5, 0],
+					"position": [0, 0, -8]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "darknslashg1",
+					"locator": "srt"
+				}
+			}
+		},
+		"animation.darkness.attack4": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5417,
+			"override_previous_animation": true,
+			"bones": {
+				"kiriri": {
+					"rotation": [0, 0, 0]
+				},
+				"a2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-103.5383, -3.71207, -167.95255]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [3.16235, 8.09054, 14.91902]
+					}
+				},
+				"rant8": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 9.48528, 13.48528]
+					}
+				},
+				"rant9": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 9.45558, 13.25112]
+					}
+				},
+				"rant10": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [45, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 7.99269, 12.84149]
+					}
+				},
+				"rant11": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [75, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 6.56122, 11.81229]
+					}
+				},
+				"rant12": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [102.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 5.06516, 10.2149]
+					}
+				},
+				"rant13": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [167.96248, 39.27345, 8.29012]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [1.40883, 2.92357, 8.29592]
+					}
+				},
+				"rant14": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-55, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [2, 8.82994, 14.42156]
+					}
+				},
+				"Body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -37.5, 0],
+						"0.25": [0, 50, 0]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [53.45486, -9.06524, -102.0012],
+						"0.25": [-94.04514, -9.06524, -102.0012]
+					}
+				},
+				"srt": {
+					"rotation": [0, 22.5, 0],
+					"position": [0, 0, -18]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "darknslashg2",
+					"locator": "srt"
+				}
+			}
+		},
+		"animation.darkness.attack2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"a2": {
+					"rotation": {
+						"0.0833": [0, 0, 0],
+						"0.25": [-105, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 3.8637, 1.03528]
+					}
+				},
+				"Body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -37.5, 0],
+						"0.25": [0, 30, 0]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-245, -5, -255],
+						"0.25": [-60, -5, -255]
+					}
+				},
+				"srt": {
+					"rotation": [0, 2.5, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "darknslash2",
+					"locator": "srt"
+				}
+			}
+		},
+		"animation.darkness.attack1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"a": {
+					"rotation": {
+						"0.0833": [0, 0, 0],
+						"0.25": [-100, 0, 0]
+					},
+					"position": {
+						"0.0833": [0, 0, 0],
+						"0.25": [0, 3.98478, 0.34862]
+					}
+				},
+				"Body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 42.5, 0],
+						"0.25": [0, -22.5, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-207.5, 17.5, -120],
+						"0.25": [-56.88227, 17.91832, -93.73831]
+					}
+				},
+				"srt": {
+					"rotation": [0, 15, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "darknslash1",
+					"locator": "srt"
+				}
+			}
+		},
+		"animation.darkness.idle": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftLeg": {
+					"rotation": [0, 0, -10]
+				},
+				"RightLeg": {
+					"rotation": [0, 0, 7.5]
+				},
+				"LeftArm": {
+					"rotation": [-32.5, -82.5, 0]
+				},
+				"RightArm": {
+					"rotation": [-32.5, 82.5, 0]
+				}
+			}
+		},
+		"animation.darkness.sneak": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [-81.17505, 15.69986, -42.73421]
+				},
+				"RightArm": {
+					"rotation": [-81.17505, -15.69986, 42.73421]
+				}
+			}
+		},
+		"animation.darkness.sneak_walk": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [-81.17505, 15.69986, -42.73421]
+				},
+				"RightArm": {
+					"rotation": [-81.17505, -15.69986, 42.73421]
+				}
+			}
+		},
+		"animation.darkness.run": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [0, 0, -17.5]
+				},
+				"RightArm": {
+					"rotation": [0, 0, 17.5]
+				}
+			}
+		},
+		"animation.darkness.walk": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [0, 0, -17.5]
+				},
+				"RightArm": {
+					"rotation": [0, 0, 17.5]
+				}
+			}
+		}
+	}
+}

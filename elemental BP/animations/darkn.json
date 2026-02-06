@@ -1,0 +1,247 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.item.darkn": {
+            "animation_length": 10.4,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tag @s add mari",
+                    "/playsound items.hand @a[r=30]",
+                    "/title @s actionbar §l§uDarkness Hand",
+                    "/scoreboard players set @s antiattack 3",
+                    "/particle rex:tanjo",
+                    "/particle rex:tampixeleda",
+                    "/particle rex:dakam",
+                    "/summon rex:hand ^^1.5^ facing ^^^1000",
+                    "/playanimation @s animation.plaguevo.skill1"
+                ],
+                "1.3": [
+                    "/tag @s remove mari",
+                    "/scoreboard players set @s antiattack 0"
+                ],
+                "10.2": [
+                    "/title @s actionbar §l§u(Darkness Hand) Ready"
+                ]
+            }
+        },
+        "animation.item.darkn1": {
+            "animation_length": 8.3,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound items.spinda @a[r=30]",
+                    "/title @s actionbar §l§uDarkness Spin",
+                    "/scoreboard players set @s antiattack 3",
+                    "/particle rex:tampixeleda",
+                    "/particle rex:tanjo",
+                    "/particle rex:dakam",
+                    "/playanimation @s animation.darkness.dasmut"
+                ],
+                "0.3": [
+                    "/tag @s add toko",
+                    "/execute as @s at @s run scriptevent no:forward8",
+                    "/summon rex:tok ~~~ facing ^^^1000"
+                ],
+                "1.01": [
+                    "/scoreboard players set @s antiattack 0",
+                    "/tag @s remove toko"
+                ],
+                "8.2": [
+                    "/title @s actionbar §l§u(Darkness Spin) Ready"
+                ]
+            }
+        },
+        "animation.item.darkn3": {
+            "animation_length": 13.5,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound items.combohol @a[r=30]",
+                    "/title @s actionbar §l§uChain Impact",
+                    "/scoreboard players set @s antiattack 3",
+                    "/playanimation @s animation.darkness.garap",
+                    "/particle rex:tampixeleda",
+                    "/particle rex:tanjo",
+                    "/tag @s add garap",
+                    "/effect @e[r=11,tag=!nja] slowness 2 2 true"
+                ],
+                "1.51": [
+                    "/summon rex:cain",
+                    "/effect @s resistance 4 2 true",
+                    "/particle rex:tamle",
+                    "/playsound items.garap @a[r=30]",
+                    "/particle rex:dakama",
+                    "/particle rex:tamtutup",
+                    "/particle rex:tamle",
+                    "/particle rex:tanjod",
+                    "/damage @e[r=5,tag=!garap,type=!item,type=!armor_stand,family=!proj,family=!damage,type=!xp_orb] 12 entity_attack entity @s",
+                    "/particle rex:tanjos",
+                    "/scoreboard players set @s antiattack 0",
+                    "/tag @e[type=rex:cain] add garap",
+                    "/tag @e[r=4,tag=!garap,type=!item,type=!armor_stand,type=!xp_orb] add garuk",
+                    "/summon rex:tamle ~~~",
+                    "/particle rex:tamimp"
+                ],
+                "3.4": [
+                    "/tag @s remove garap",
+                    "/tag @e remove garuk"
+                ],
+                "13.4": [
+                    "/title @s actionbar §l§u(Chain Impact) Ready"
+                ]
+            }
+        },
+        "animation.item.darkn2": {
+            "animation_length": 18.5,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/tag @s add vortex",
+                    "/title @s actionbar §l§uVoid Combo",
+                    "/scoreboard players set @s antiattack 3",
+                    "/particle rex:tampixeleda",
+                    "/particle rex:tamler ~~~",
+                    "/playanimation @s animation.kuci.hoa",
+                    "/playsound items.kuchi2 @a[r=30]"
+                ],
+                "0.5": [
+                    "/particle rex:darkcom ~~~",
+                    "/tag @s add sla",
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playsound items.darknslash1 @a[r=30]",
+                    "/playanimation @s animation.darkness.attack1",
+                    "/damage @e[r=4,tag=!vortex,family=!damage,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 3 entity_attack entity @s"
+                ],
+                "0.75": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash2 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack2",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 3 entity_attack entity @s"
+                ],
+                "1.0": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash1 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack1",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s"
+                ],
+                "1.25": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash2 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack2",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s"
+                ],
+                "1.5": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:dakim ~~~",
+                    "/playsound items.darknslash1 @a[r=30]",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack1",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 3 entity_attack entity @s"
+                ],
+                "1.75": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash2 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack2",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s"
+                ],
+                "2.0": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash1 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack1",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s"
+                ],
+                "2.25": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/playsound items.darknslash2 @a[r=30]",
+                    "/particle rex:dakim ~~~",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack2",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 1 entity_attack entity @s"
+                ],
+                "2.5": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:dakim ~~~",
+                    "/playsound items.darknslash1 @a[r=30]",
+                    "/execute as @s at @s run scriptevent no:forward1",
+                    "/playanimation @s animation.darkness.attack1",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s"
+                ],
+                "2.6": [
+                    "/particle rex:tamtik ~~1~"
+                ],
+                "3.0": [
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:darkcom ~~~",
+                    "/particle rex:dakim ~~~",
+                    "/particle rex:tamle ~~~",
+                    "/playsound items.tamtik @a[r=30]",
+                    "/playanimation @s animation.darkness.attack2",
+                    "/damage @e[r=4,tag=!vortex,family=!proj,type=!xp_orb,type=!item,type=!armor_stand] 2 entity_attack entity @s",
+                    "/summon rex:blo ~~~ facing ^^0.5^1000",
+                    "/scoreboard players set @s antiattack 0",
+                    "/tag @s remove sla"
+                ],
+                "4.4": [
+                    "/tag @s remove vortex"
+                ],
+                "18.4": [
+                    "/title @s actionbar §l§u(Void Combo) Ready"
+                ]
+            }
+        },
+        "animation.item.darkn4": {
+            "animation_length": 47.9,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/title @s actionbar §l§uForbidden Shadow Jutsu",
+                    "/particle rex:tampixeleda",
+                    "/scoreboard players set @s antiattack 3",
+                    "/particle rex:tampixelsed",
+                    "/tag @s add kuchi",
+                    "/playanimation @s animation.darkness.kuc",
+                    "/playsound items.kuchi @a[r=30]"
+                ],
+                "0.1": [
+                    "/inputpermission set @s movement disabled"
+                ],
+                "1.0833": [
+                    "/particle rex:tampixelsed",
+                    "/particle rex:tampixeled",
+                    "/summon rex:ass ^^0.5^ facing ^^^1000",
+                    "/inputpermission set @s movement enabled"
+                ],
+                "10.5": [
+                    "/scoreboard players set @s antiattack 0"
+                ],
+                "16.8": [
+                    "/tag @s remove kuchi"
+                ],
+                "47.8": [
+                    "/title @s actionbar §l§u(Forbiden Shadow Jutsu) Ready"
+                ]
+            }
+        }
+    }
+}

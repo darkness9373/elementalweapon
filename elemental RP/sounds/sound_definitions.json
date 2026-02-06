@@ -168,6 +168,27 @@
             "sounds": [
                 "sounds/sho"
             ]
+        },
+        "items.darknslash1": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/darknslash1"
+            ]
+        },
+        "items.darknslash2": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/darknslash2"
+            ]
+        },
+        "items.darknslash3": {
+            "__use_legacy_max_distance": false,
+            "category": "player",
+            "sounds": [
+                "sounds/darknslash3"
+            ]
         }
     }
 }

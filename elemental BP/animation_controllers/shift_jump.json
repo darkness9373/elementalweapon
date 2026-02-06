@@ -11,6 +11,9 @@
             },
             {
               "bluf_use3": "(query.get_equipped_item_name == 'bluf') && (query.is_sneaking) && (query.is_jumping)"
+            },
+            {
+              "darkn_use3": "(query.get_equipped_item_name == 'darkn') && (query.is_sneaking) && (query.is_jumping)"
             }
           ],
           "on_exit": [
@@ -35,6 +38,16 @@
           ],
           "animations": [
             "bluf_finished3"
+          ]
+        },
+        "darkn_use3": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "darkn_finished3"
           ]
         }
       }

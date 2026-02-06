@@ -11,6 +11,9 @@
             },
             {
               "bluf_use1": "(query.get_equipped_item_name == 'bluf') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
+            },
+            {
+              "darkn_use1": "(query.get_equipped_item_name == 'darkn') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
             }
           ],
           "on_exit": [
@@ -35,6 +38,16 @@
           ],
           "animations": [
             "bluf_finished1"
+          ]
+        },
+        "darkn_use1": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "darkn_finished1"
           ]
         }
       }

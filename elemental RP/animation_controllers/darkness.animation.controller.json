@@ -1,0 +1,88 @@
+{
+    "format_version": "1.19.0",
+    "animation_controllers": {
+        "controller.animation.darknessac": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "darkness_idle",
+                        "darkness_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "walking": "q.ground_speed > 0.5 && q.modified_move_speed && !q.is_sneaking"
+                        },
+                        {
+                            "sneaking": "q.is_sneaking"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "walking": {
+                    "animations": [
+                        "darkness_walk",
+                        "darkness_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "q.ground_speed < 0.5 && !q.is_sneaking"
+                        },
+                        {
+                            "sneaking": "q.is_sneaking"
+                        },
+                        {
+                            "Running": "q.modified_move_speed && q.is_sprinting"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "Running": {
+                    "animations": [
+                        "darkness_run"
+                    ],
+                    "transitions": [
+                        {
+                            "walking": "q.ground_speed < 3.9 && !q.is_sprinting"
+                        },
+                        {
+                            "sneaking": "q.is_sneaking"
+                        }
+                    ],
+                    "blend_transition": 0.4
+                },
+                "sneaking": {
+                    "animations": [
+                        "darkness_sneak"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
+                        },
+                        {
+                            "snikwalking": "q.ground_speed > 0.4 && q.modified_move_speed"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "snikwalking": {
+                    "animations": [
+                        "darkness_sneak_walk"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
+                        },
+                        {
+                            "Running": "q.modified_move_speed && q.is_sprinting"
+                        },
+                        {
+                            "walking": "q.ground_speed > 0.5 && !q.is_sneaking"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        }
+    }
+}

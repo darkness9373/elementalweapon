@@ -18,7 +18,8 @@
                 "default": "geometry.humanoid.custom",
                 "cape": "geometry.cape",
                 "shadow": "geometry.shadow",
-                "bluf": "geometry.bluf"
+                "bluf": "geometry.bluf",
+                "darkeng": "geometry.darkness"
             },
             "particle_effects": {
                 "shadoslash1": "rex:shadoslash2",
@@ -32,7 +33,11 @@
                 "crowledmini": "rex:crowledmini",
                 "blu": "rex:blu",
                 "impas3": "rex:impas3",
-                "semburbiru": "rex:semburbiru"
+                "semburbiru": "rex:semburbiru",
+                "darknslashg1": "rex:darknslashg1",
+                "darknslashg2": "rex:darknslashg2",
+                "darknslash1": "rex:darknslash1",
+                "darknslash2": "rex:darknslash2"
             },
             "scripts": {
                 "scale": "0.9375",
@@ -53,10 +58,17 @@
                     "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
                     "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
                     "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
-                    "variable.shadow = query.get_equipped_item_name('main_hand') == 'drk:shadow';",
-                    "variable.blufeng = query.get_equipped_item_name('main_hand') == 'rex:bluf';"
+                    "variable.shadow = query.get_equipped_item_name('main_hand') == 'shadow';",
+                    "variable.blufeng = query.get_equipped_item_name('main_hand') == 'bluf';",
+                    "variable.darkeng = query.get_equipped_item_name('main_hand') == 'darkn';"
                 ],
                 "animate": [
+                    {
+                        "root": "1.0"
+                    },
+                    {
+                        "base_controller": "1.0"
+                    },
                     {
                         "shadow": "variable.shadow && variable.is_first_person"
                     },
@@ -70,7 +82,10 @@
                         "blufac": "variable.blufeng && !variable.is_first_person"
                     },
                     {
-                        "root": "(1.0)"
+                        "darkn": "variable.darkeng && variable.is_first_person"
+                    },
+                    {
+                        "darknessac": "variable.darkeng && !variable.is_first_person"
                     }
                 ],
                 "variables": {
@@ -157,6 +172,13 @@
                 "bluf_sneak_walk": "animation.bluf.sneak_walk",
                 "bluf_run": "animation.bluf.run",
                 "bluf_idle": "animation.bluf.idle",
+                "darkn": "animation.darkness.fpp",
+                "darknessac": "controller.animation.darknessac",
+                "darkness_walk": "animation.darkness.walk",
+                "darkness_sneak": "animation.darkness.sneak",
+                "darkness_sneak_walk": "animation.darkness.sneak_walk",
+                "darkness_run": "animation.darkness.run",
+                "darkness_idle": "animation.darkness.idle",
                 "crawling.legs": "animation.player.crawl.legs"
             },
             "render_controllers": [
@@ -165,6 +187,9 @@
                 },
                 {
                     "controller.render.blufeng": "variable.blufeng"
+                },
+                {
+                    "controller.render.darkeng": "variable.darkeng"
                 },
                 {
                     "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
