@@ -8,6 +8,9 @@
     },
     "darkn": {
       "textures": "textures/items/darkn.png"
+    },
+    "icy": {
+      "textures": "textures/items/icy.png"
     }
   }
 }

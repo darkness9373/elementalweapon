@@ -1,250 +1,271 @@
 {
-    "format_version": "1.14.0",
-    "sound_definitions": {
-        "items.shadoslash1": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadoslash1"
-            ]
-        },
-        "items.shadoslash2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadoslash2"
-            ]
-        },
-        "items.shadoslash3": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadoslash3"
-            ]
-        },
-        "items.shadoslash4": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadoslash4"
-            ]
-        },
-        "items.shuri": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shuri"
-            ]
-        },
-        "items.shadash": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadash"
-            ]
-        },
-        "items.shadomundur": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadomundur"
-            ]
-        },
-        "items.shadomulti": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadomulti"
-            ]
-        },
-        "items.jalan": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/jalan"
-            ]
-        },
-        "items.shadoulti": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/shadoulti"
-            ]
-        },
-        "items.flamor": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/flamor"
-            ]
-        },
-        "items.blufb1": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufb1"
-            ]
-        },
-        "items.blufb2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufb2"
-            ]
-        },
-        "items.blufb4": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufb4"
-            ]
-        },
-        "items.blufskill22": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill22"
-            ]
-        },
-        "items.blufskill1": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill1"
-            ]
-        },
-        "items.blufskill1m": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill1m"
-            ]
-        },
-        "items.blufskill2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill2"
-            ]
-        },
-        "items.blufskill2m": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill2m"
-            ]
-        },
-        "items.blufskill3": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill3"
-            ]
-        },
-        "items.blufskill3m": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufskill3m"
-            ]
-        },
-        "items.blufulti": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/blufulti"
-            ]
-        },
-        "items.uppercut": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/uppercut"
-            ]
-        },
-        "items.sho": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/sho"
-            ]
-        },
-        "items.darknslash1": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/darknslash1"
-            ]
-        },
-        "items.darknslash2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/darknslash2"
-            ]
-        },
-        "items.darknslash3": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/darknslash3"
-            ]
-        },
-        "items.tamtik": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/tamtik"
-            ]
-        },
-        "items.spinda": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/spinda"
-            ]
-        },
-        "items.kuchi": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/kuchi"
-            ]
-        },
-        "items.kuchi2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/kuchi2"
-            ]
-        },
-        "items.garap": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/garap"
-            ]
-        },
-        "items.hand": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/hand"
-            ]
-        },
-        "items.combohol": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/combohol"
-            ]
-        },
-        "items.combohol2": {
-            "__use_legacy_max_distance": false,
-            "category": "player",
-            "sounds": [
-                "sounds/combohol2"
-            ]
-        }
-    }
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"items.shadoslash1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoslash1"
+			]
+		},
+		"items.shadoslash2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoslash2"
+			]
+		},
+		"items.shadoslash3": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoslash3"
+			]
+		},
+		"items.shadoslash4": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoslash4"
+			]
+		},
+		"items.shuri": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shuri"
+			]
+		},
+		"items.shadash": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadash"
+			]
+		},
+		"items.shadomundur": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadomundur"
+			]
+		},
+		"items.shadomulti": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadomulti"
+			]
+		},
+		"items.jalan": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/jalan"
+			]
+		},
+		"items.shadoulti": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoulti"
+			]
+		},
+		"items.flamor": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/flamor"
+			]
+		},
+		"items.blufb1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufb1"
+			]
+		},
+		"items.blufb2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufb2"
+			]
+		},
+		"items.blufb4": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufb4"
+			]
+		},
+		"items.blufskill22": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill22"
+			]
+		},
+		"items.blufskill1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill1"
+			]
+		},
+		"items.blufskill1m": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill1m"
+			]
+		},
+		"items.blufskill2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill2"
+			]
+		},
+		"items.blufskill2m": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill2m"
+			]
+		},
+		"items.blufskill3": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill3"
+			]
+		},
+		"items.blufskill3m": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufskill3m"
+			]
+		},
+		"items.blufulti": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blufulti"
+			]
+		},
+		"items.uppercut": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/uppercut"
+			]
+		},
+		"items.sho": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/sho"
+			]
+		},
+		"items.darknslash1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/darknslash1"
+			]
+		},
+		"items.darknslash2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/darknslash2"
+			]
+		},
+		"items.darknslash3": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/darknslash3"
+			]
+		},
+		"items.tamtik": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/tamtik"
+			]
+		},
+		"items.spinda": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/spinda"
+			]
+		},
+		"items.kuchi": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/kuchi"
+			]
+		},
+		"items.kuchi2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/kuchi2"
+			]
+		},
+		"items.garap": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/garap"
+			]
+		},
+		"items.hand": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/hand"
+			]
+		},
+		"items.combohol": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/combohol"
+			]
+		},
+		"items.combohol2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/combohol2"
+			]
+		},
+		"items.hando": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/hando"
+			]
+		},
+		"items.hindia": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/handoo"
+			]
+		},
+		"items.ambi": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/ambi"
+			]
+		}
+	}
 }

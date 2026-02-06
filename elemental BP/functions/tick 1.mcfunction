@@ -615,6 +615,7 @@ execute at @e[type=rex:arrowbwh] unless block ^^-1^ air run damage @e[r=20,tag=!
 execute as @e[type=rex:arrowbwh] at @s unless block ^^-1^ air run event entity @s despawn
 
 
+
 execute as @e[type=rex:blo,scores={waktu=99..}] at @s run particle rex:tamspik ~~~
 execute as @e[type=rex:blo,scores={waktu=99..}] at @s run playsound items.combohol2 @a[r=30]
 execute as @e[type=rex:blo,scores={waktu=99..}] at @s run particle rex:tampeko ~~~

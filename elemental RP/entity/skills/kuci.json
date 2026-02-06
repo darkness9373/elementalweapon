@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "rex:kuci",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/skills/kuci"
+			},
+			"geometry": {
+				"default": "geometry.kuci"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					{
+						"move": "query.is_moving"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.darkness.kuc"
+			},
+			"particle_effects": {
+				"segel": "rex:segel",
+				"atasegel": "rex:atasegel",
+				"akuma": "rex:akuma"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

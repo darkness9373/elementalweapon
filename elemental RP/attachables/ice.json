@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "rex:ice",
+			"materials": {
+				"default": "enderman",
+				"enchanted": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/attachable/ice",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.ice",
+				"on_back": "geometry.ice_back"
+			},
+			"animations": {
+				"hold_first_person": "animation.ice.fpp",
+				"hold_third_person": "animation.ice.tpp",
+				"back": "animation.ice_back"
+			},
+			"scripts": {
+				"animate": [
+			{
+				"hold_first_person": "c.is_first_person"
+			},
+			{
+				"hold_third_person": "!c.is_first_person"
+		    },
+			{
+				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')"
+			}
+		]
+	},
+			"render_controllers": [
+				{"controller.render.default" : "q.is_item_name_any('slot.weapon.mainhand', 0, 'rex:ice')"},
+				{"controller.render.on_back" : "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')"}
+			]
+		}
+	}
+}

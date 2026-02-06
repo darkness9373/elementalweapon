@@ -19,14 +19,14 @@
                 "cape": "geometry.cape",
                 "shadow": "geometry.shadow",
                 "bluf": "geometry.bluf",
-                "darkeng": "geometry.darkness"
+                "darkeng": "geometry.darkness",
+                "ueng": "geometry.ice"
             },
             "particle_effects": {
                 "shadoslash1": "rex:shadoslash2",
                 "shadoslash2": "rex:shadoslash1",
                 "shadosl": "rex:shadosl",
                 "shadotitik": "rex:shadotitik",
-                "shadosund": "rex:shadosund",
                 "shadocahaya": "rex:shadocahaya",
                 "shadocahayaledak": "rex:shadocahayaledak",
                 "sundshado": "rex:sundshado",
@@ -37,7 +37,10 @@
                 "darknslashg1": "rex:darknslashg1",
                 "darknslashg2": "rex:darknslashg2",
                 "darknslash1": "rex:darknslash1",
-                "darknslash2": "rex:darknslash2"
+                "darknslash2": "rex:darknslash2",
+                "garap": "rex:garap",
+                "icear": "rex:icear",
+                "icecr": "rex:icecr"
             },
             "scripts": {
                 "scale": "0.9375",
@@ -60,7 +63,8 @@
                     "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
                     "variable.shadow = query.get_equipped_item_name('main_hand') == 'shadow';",
                     "variable.blufeng = query.get_equipped_item_name('main_hand') == 'bluf';",
-                    "variable.darkeng = query.get_equipped_item_name('main_hand') == 'darkn';"
+                    "variable.darkeng = query.get_equipped_item_name('main_hand') == 'darkn';",
+                    "variable.ueng = query.get_equipped_item_name('main_hand') == 'ice';"
                 ],
                 "animate": [
                     {
@@ -86,6 +90,9 @@
                     },
                     {
                         "darknessac": "variable.darkeng && !variable.is_first_person"
+                    },
+                    {
+                        "iceac": "variable.ueng && !variable.is_first_person"
                     }
                 ],
                 "variables": {
@@ -179,6 +186,12 @@
                 "darkness_sneak_walk": "animation.darkness.sneak_walk",
                 "darkness_run": "animation.darkness.run",
                 "darkness_idle": "animation.darkness.idle",
+                "iceac": "controller.animation.iceac",
+                "ice_walk": "animation.ice.walk",
+                "ice_sneak": "animation.ice.sneak",
+                "ice_sneak_walk": "animation.ice.sneak_walk",
+                "ice_run": "animation.ice.run",
+                "ice_idle": "animation.ice.idle",
                 "crawling.legs": "animation.player.crawl.legs"
             },
             "render_controllers": [
@@ -190,6 +203,9 @@
                 },
                 {
                     "controller.render.darkeng": "variable.darkeng"
+                },
+                {
+                    "controller.render.ueng": "variable.ueng"
                 },
                 {
                     "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"

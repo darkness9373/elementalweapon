@@ -1,0 +1,131 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item.ice": {
+      "animation_length": 1.4,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add fss",
+          "/playsound items.pull @a[r=30]",
+          "/playanimation @s animation.ice.nyerang"
+        ],
+        "0.5": [
+          "/summon rex:arroic ^^1.5^ facing ^^^1000",
+          "/playsound items.ou @a[r=30]",
+          "/particle rex:iceduarr"
+        ],
+        "1.3": [
+          "/tag @s remove fss"
+        ]
+      }
+    },
+    "animation.item.ice1": {
+      "animation_length": 3.3,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+						"/execute as @s at @s run scriptevent no:forward4",
+          "/playsound items.mju @a[r=30]",
+          "/particle rex:iceturun",
+          "/particle rex:icenai",
+          "/playanimation @s animation.ice.mju"
+        ]
+      }
+    },
+    "animation.item.ice2": {
+      "animation_length": 28.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playsound items.udanice @a[r=30]",
+          "/title @s actionbar §lIce Flow",
+          "/particle rex:icenai",
+          "/particle rex:iceturun",
+          "/particle rex:iceflowawal",
+          "/tag @s add njas"
+        ],
+        "1.3": [
+          "/summon rex:icrat",
+          "/particle rex:iceturun"
+        ],
+        "13.4": [
+          "/tag @s remove njas"
+        ],
+        "28.4": [
+          "/title @s actionbar §l(Ice Flow) Ready"
+        ]
+      }
+    },
+    "animation.item.ice3": {
+      "animation_length": 6.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/playanimation @s animation.ice.slide",
+          "/playsound items.slide @a[r=30]",
+          "/summon rex:clk ~~-0.5~",
+          "/tag @s add slide",
+						"/execute as @s at @s run scriptevent no:backward5",
+          "/title @s actionbar §lIce Slide"
+        ],
+        "1.0": [
+          "/tag @s remove slide",
+          "/playanimation @s animation.ice.skill2"
+        ],
+        "1.4": [
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~~8~ facing ^^-1000^",
+          "/playsound items.ou @a[r=30]",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~2~8~2 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~-2~8~-2 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~2~8~-2 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~-2~8~2 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~1~8~1 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~-1~8~-1 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~1~8~-1 facing ^^-1000^",
+          "/execute as @e[type=rex:clk,c=1] at @s run summon rex:arroic ~-1~8~1 facing ^^-1000^"
+        ],
+        "6.4": [
+          "/title @s actionbar §l(Ice Slide) Ready"
+        ]
+      }
+    },
+    "animation.item.ice4": {
+      "animation_length": 35.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @s actionbar §lIcy Blizzard",
+          "/playsound items.blizzard @a[r=30]",
+          "/effect @s resistance 10 2 true",
+          "/particle rex:icenai",
+          "/tag @s add rutg",
+          "/tag @s add tah",
+          "/playanimation @s animation.ice.ses"
+        ],
+        "0.2": [
+          "/summon rex:nana"
+        ],
+        "11.0": [
+          "/tag @s remove tah",
+          "/particle rex:iceimp1",
+          "/particle rex:iceimp2",
+          "/particle rex:iceimp3",
+          "/particle rex:snowimpact",
+          "/summon rex:iced"
+        ],
+        "11.3": [
+          "/damage @e[r=40,tag=!rutg,type=!item,type=!armor_stand,type=!xp_orb] 30 entity_attack entity @s",
+          "/particle rex:icesnow",
+          "/effect @e[r=20,tag=!rutg,type=!item,type=!armor_stand,type=!xp_orb] slowness 4 4 true"
+        ],
+        "15.0": [
+          "/tag @s remove rutg"
+        ],
+        "35.4": [
+          "/title @s actionbar §l(Icy Blizzard) Ready"
+        ]
+      }
+    }
+  }
+}

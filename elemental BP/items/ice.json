@@ -2,7 +2,7 @@
   "format_version": "1.20.50",
   "minecraft:item": {
     "description": {
-      "identifier": "rex:darkn",
+      "identifier": "rex:ice",
       "menu_category": {
         "category": "equipment"
       }
@@ -15,22 +15,22 @@
         "use_duration": 999999
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:damage": 10,
+      "minecraft:damage": 1,
       "minecraft:max_stack_size": 1,
       "minecraft:icon": {
-        "texture": "darkn"
+        "texture": "icy"
       },
       "minecraft:display_name": {
-        "value": "Darkness Sickle"
+        "value": "Ice Bow"
       },
       "minecraft:cooldown": {
-        "category": "darkn",
+        "category": "ice",
         "duration": 1
       },
       "minecraft:allow_off_hand": true,
       "minecraft:should_despawn": true,
       "minecraft:enchantable": {
-        "slot": "sword",
+        "slot": "bow",
         "value": 10
       }
     }
