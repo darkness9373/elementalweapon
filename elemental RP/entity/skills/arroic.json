@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:arroic",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/skills/arroic"
+      },
+      "geometry": {
+        "default": "geometry.arroic"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_moving"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.arroic.new"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

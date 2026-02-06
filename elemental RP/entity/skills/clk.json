@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:clk",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/skills/clk"
+      },
+      "geometry": {
+        "default": "geometry.clk"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_moving"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.clk.new"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

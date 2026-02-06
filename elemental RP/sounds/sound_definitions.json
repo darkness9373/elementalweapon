@@ -266,6 +266,48 @@
 			"sounds": [
 				"sounds/ambi"
 			]
+		},
+		"items.pull": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/pull"
+			]
+		},
+		"items.ou": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/ou"
+			]
+		},
+		"items.mju": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/mju"
+			]
+		},
+		"items.udanice": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/udanice"
+			]
+		},
+		"items.slide": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/slide"
+			]
+		},
+		"items.blizzard": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/blizzard"
+			]
 		}
 	}
 }

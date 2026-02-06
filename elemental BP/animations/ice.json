@@ -25,7 +25,7 @@
       "loop": false,
       "timeline": {
         "0.0": [
-						"/execute as @s at @s run scriptevent no:forward4",
+          "/execute as @s at @s run scriptevent no:forward4",
           "/playsound items.mju @a[r=30]",
           "/particle rex:iceturun",
           "/particle rex:icenai",
@@ -66,7 +66,7 @@
           "/playsound items.slide @a[r=30]",
           "/summon rex:clk ~~-0.5~",
           "/tag @s add slide",
-						"/execute as @s at @s run scriptevent no:backward5",
+          "/execute as @s at @s run scriptevent no:backward5",
           "/title @s actionbar §lIce Slide"
         ],
         "1.0": [
