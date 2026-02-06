@@ -113,6 +113,7 @@ execute as @e[tag=toko] at @s run damage @e[r=5,tag=!toko,type=!item,type=!armor
 tp @e[type=rex:tok,c=1] @e[tag=toko,c=1]
 execute at @e[tag=toko,c=1] run particle rex:darknslashm
 
+
 # Done
 execute at @e[type=rex:blo] run particle rex:tamler~~~
 execute at @e[type=rex:blo] run particle rex:tamu~~~
@@ -171,3 +172,30 @@ execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] 
 execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] run effect @e[r=4,c=1,tag=!kuchi,type=!rex:ku] slowness 5 1 true
 execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] run particle rex:ataskuchi
 execute as @e[type=rex:assh] at @s if entity @e[r=4,c=1,tag=!kuchi,type=rex:ku] run kill @s
+
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run effect @e[r=2,type=!item,type=!armor_stand,tag=!fss] slowness 2 6 true
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:pecahice
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run particle rex:iceduar1
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run damage @e[r=2,tag=!fss,type=!item,type=!armor_stand,type=!xp_orb] 7 projectile entity @e[c=1,tag=fss]
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run execute at @e[r=2,c=1,type=!item,type=!armor_stand,family=!proj,family=!damage,tag=!fss] run summon rex:es ~~-0.2~
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run playsound items.hitice @a[r=30]
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=2,type=!item,type=!armor_stand,type=!xp_orb] run kill @s
+
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run effect @e[r=9,type=!item,type=!armor_stand,tag=!fss,family=kyros] slowness 2 6 true
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run particle rex:pecahice
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run particle rex:iceduar1
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run damage @e[r=9,family=kyros] 7 projectile entity @e[c=1,tag=fss]
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run execute at @e[r=9,family=kyros] run summon rex:es ~~-0.2~
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run playsound items.hitice @a[r=30]
+execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r=8,family=kyros] run kill @s
+
+playanimation @e[type=rex:arroic] animation.rotate n 10000
+
+execute at @e[type=rex:icrat] run damage @e[r=10,tag=!njas,type=!item,type=!armor_stand,type=!xp_orb] 2 entity_attack entity @e[c=1,tag=njay]
+
+execute at @e[tag=slide] run particle rex:iceslide2 ~~~
+
+execute at @e[tag=tah] run particle rex:iceasap ~~~
+execute as @e[tag=tah] at @s run damage @e[r=9,tag=!tah,type=!item,type=!armor_stand,type=!xp_orb] 4 entity_attack entity @e[c=1,tag=tah]
+execute as @e[tag=tah] at @s run tp @e[type=rex:nana,c=1] @s
+execute as @e[tag=tah] at @s run effect @e[r=9,tag=!tah,type=!item,type=!armor_stand,type=!xp_orb] slowness 1 3 true

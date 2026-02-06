@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:es",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/skills/es"
+      },
+      "geometry": {
+        "default": "geometry.es"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_moving"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.es.new"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

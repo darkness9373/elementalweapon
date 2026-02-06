@@ -308,6 +308,13 @@
 			"sounds": [
 				"sounds/blizzard"
 			]
+		},
+		"items.hitice": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/hitice"
+			]
 		}
 	}
 }

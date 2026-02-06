@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nana.new": {
+			"loop": true,
+			"animation_length": 0.5025,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2513": [0, -180, 0],
+						"0.5025": [0, -357.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

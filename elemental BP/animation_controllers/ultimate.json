@@ -14,6 +14,9 @@
             },
             {
               "darkn_use4": "(query.get_equipped_item_name == 'darkn') && (query.is_sneaking) && (query.is_using_item)"
+            },
+            {
+              "ice_use4": "(query.get_equipped_item_name == 'ice') && (query.is_sneaking) && (query.is_using_item)"
             }
           ],
           "on_exit": [
@@ -48,6 +51,16 @@
           ],
           "animations": [
             "darkn_finished4"
+          ]
+        },
+        "ice_use4": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "ice_finished4"
           ]
         }
       }

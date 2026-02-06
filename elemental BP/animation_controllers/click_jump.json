@@ -14,6 +14,9 @@
             },
             {
               "darkn_use1": "(query.get_equipped_item_name == 'darkn') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
+            },
+            {
+              "ice_use1": "(query.get_equipped_item_name == 'ice') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
             }
           ],
           "on_exit": [
@@ -48,6 +51,16 @@
           ],
           "animations": [
             "darkn_finished1"
+          ]
+        },
+        "ice_use1": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "ice_finished1"
           ]
         }
       }

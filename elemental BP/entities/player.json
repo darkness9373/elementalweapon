@@ -37,7 +37,12 @@
                 "darkn_finished1": "animation.item.darkn1",
                 "darkn_finished2": "animation.item.darkn2",
                 "darkn_finished3": "animation.item.darkn3",
-                "darkn_finished4": "animation.item.darkn4"
+                "darkn_finished4": "animation.item.darkn4",
+                "ice_finished": "animation.item.ice",
+                "ice_finished1": "animation.item.ice1",
+                "ice_finished2": "animation.item.ice2",
+                "ice_finished3": "animation.item.ice3",
+                "ice_finished4": "animation.item.ice4"
             }
         },
         "component_groups": {
