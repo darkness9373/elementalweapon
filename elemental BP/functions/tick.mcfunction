@@ -69,6 +69,8 @@ execute as @e[type=rex:tmj] at @s run tp @s ^^0.1^2 true
 execute as @e[type=rex:tmj] at @s run tp @e[r=3,tag=!tinju,family=!damage] @s
 
 tp @e[type=rex:tinjublu,c=1] @p[tag=kamb,c=1]
+execute at @e[type=rex:tinjublu] run particle rex:impas3^^1^2
+execute at @e[type=rex:tinjublu] run damage @e[r=3,tag=!tinju] 4 entity_attack entity @e[c=1,tag=tinju]
 
 execute at @e[tag=kbg] run particle rex:kobongbiru~~~
 damage @e[tag=kbg] 2 fire
