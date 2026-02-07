@@ -196,7 +196,7 @@ execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r
 
 playanimation @e[type=rex:arroic] animation.rotate n 10000
 
-execute at @e[type=rex:icrat] run damage @e[r=10,tag=!njas,type=!item,type=!armor_stand,type=!xp_orb] 2 entity_attack entity @e[c=1,tag=njay]
+execute at @e[type=rex:icrat] run damage @e[r=10,tag=!njas,type=!item,type=!armor_stand,type=!xp_orb] 2 entity_attack entity @e[c=1,tag=njas]
 
 execute at @e[tag=slide] run particle rex:iceslide2 ~~~
 
