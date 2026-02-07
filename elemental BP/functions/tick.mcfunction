@@ -8,6 +8,7 @@ scoreboard objectives add hu dummy
 scoreboard objectives add waktu dummy
 scoreboard objectives add su dummy
 scoreboard objectives add tac dummy
+scoreboard objectives add wendideath dummy
 
 scoreboard players add @e[type=rex:kuci] waktu 1
 scoreboard players add @e[type=rex:shuriken] hu 1
@@ -16,6 +17,8 @@ scoreboard players add @e[type=rex:blo] waktu 1
 scoreboard players add @e[type=rex:ass] su 1
 scoreboard players add @e[type=rex:ku,tag=kukun] tac 1
 scoreboard players add @e[type=rex:ku] waktu 1
+scoreboard players add @e[type=rex:wendigo] wendideath 1
+scoreboard players add @e[tag=bescil] waktu 1
 
 execute as @e[tag=itas] at @s run playanimation @s animation.mun.lari
 
@@ -204,3 +207,15 @@ execute at @e[tag=tah] run particle rex:iceasap ~~~
 execute as @e[tag=tah] at @s run damage @e[r=9,tag=!tah,type=!item,type=!armor_stand,type=!xp_orb] 4 entity_attack entity @e[c=1,tag=tah]
 execute as @e[tag=tah] at @s run tp @e[type=rex:nana,c=1] @s
 execute as @e[tag=tah] at @s run effect @e[r=9,tag=!tah,type=!item,type=!armor_stand,type=!xp_orb] slowness 1 3 true
+
+execute as @e[tag=kabar] at @s run playanimation @s animation.mun.lari
+execute as @e[tag=kabar] at @s run particle rex:soulidleza ~~~
+execute at @e[tag=kabar] run particle rex:soulidle
+execute as @e[tag=kabari] at @s run particle rex:soulidleza ~~~
+
+execute at @e[type=rex:eyesball] run particle rex:soulidlez
+execute as @e[type=rex:eyesball] at @s unless block ~~-0.3~ air run tag @s add bescil
+execute as @e[tag=bescil,scores={waktu=1}] at @s run particle rex:soulbescil
+
+playanimation @e[type=rex:wendigo,scores={wendideath=2}] animation.wendigo.hidup
+event entity @e[type=rex:wendigo,scores={wendideath=700}] matiaja

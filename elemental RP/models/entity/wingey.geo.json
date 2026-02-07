@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wingey",
+				"texture_width": 40,
+				"texture_height": 40,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "as",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "matane",
+					"parent": "as",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-3, -3, -3],
+							"size": [6, 6, 6],
+							"uv": {
+								"north": {"uv": [26, 28], "uv_size": [6, 6]},
+								"east": {"uv": [26, 7], "uv_size": [6, 6]},
+								"south": {"uv": [26, 14], "uv_size": [6, 6]},
+								"west": {"uv": [26, 21], "uv_size": [6, 6]},
+								"up": {"uv": [26, 0], "uv_size": [6, 6]},
+								"down": {"uv": [33, 6], "uv_size": [6, -6]}
+							}
+						}
+					]
+				},
+				{
+					"name": "sayape",
+					"parent": "as",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "kiri",
+					"parent": "sayape",
+					"pivot": [3, 0, 0],
+					"rotation": [0, 0, -20],
+					"cubes": [
+						{
+							"origin": [2.74435, -7.77859, 0],
+							"size": [11, 19, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [9.5, 19]}
+							}
+						}
+					]
+				},
+				{
+					"name": "kiris",
+					"parent": "kiri",
+					"pivot": [14, 5, 0],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{
+							"origin": [13.64435, -7.77859, -0.1],
+							"size": [14, 19, 0],
+							"uv": {
+								"north": {"uv": [9, 0], "uv_size": [16, 19]}
+							}
+						}
+					]
+				},
+				{
+					"name": "kan",
+					"parent": "sayape",
+					"pivot": [-3, 0, 0],
+					"rotation": [0, 0, 20],
+					"cubes": [
+						{
+							"origin": [-13.74435, -7.77859, 0],
+							"size": [11, 19, 0],
+							"uv": {
+								"north": {"uv": [9.5, 0], "uv_size": [-9.5, 19]}
+							}
+						}
+					]
+				},
+				{
+					"name": "kanas",
+					"parent": "kan",
+					"pivot": [-14, 5, 0],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{
+							"origin": [-27.64435, -7.77859, -0.1],
+							"size": [14, 19, 0],
+							"uv": {
+								"north": {"uv": [25, 0], "uv_size": [-16, 19]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

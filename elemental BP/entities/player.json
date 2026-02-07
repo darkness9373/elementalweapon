@@ -42,7 +42,12 @@
                 "ice_finished1": "animation.item.ice1",
                 "ice_finished2": "animation.item.ice2",
                 "ice_finished3": "animation.item.ice3",
-                "ice_finished4": "animation.item.ice4"
+                "ice_finished4": "animation.item.ice4",
+                "soul_finished": "animation.item.soul",
+                "soul_finished1": "animation.item.soul1",
+                "soul_finished2": "animation.item.soul2",
+                "soul_finished3": "animation.item.soul3",
+                "soul_finished4": "animation.item.soul4"
             }
         },
         "component_groups": {

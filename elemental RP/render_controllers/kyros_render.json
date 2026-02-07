@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.kyros": {
+			"arrays": {
+				"textures": {
+				  "array.frames": [
+					"texture.kyros"
+					]
+				}
+			},
+			"geometry": "geometry.kyros",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"temp.life_time=query.life_time*8.0;return array.frames[temp.life_time];"
+			]
+		}
+	}
+}

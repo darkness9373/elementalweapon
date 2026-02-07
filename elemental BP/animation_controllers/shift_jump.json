@@ -17,6 +17,9 @@
             },
             {
               "ice_use3": "(query.get_equipped_item_name == 'ice') && (query.is_sneaking) && (query.is_jumping)"
+            },
+            {
+              "soul_use3": "(query.get_equipped_item_name == 'soul') && (query.is_sneaking) && (query.is_jumping)"
             }
           ],
           "on_exit": [
@@ -61,6 +64,16 @@
           ],
           "animations": [
             "ice_finished3"
+          ]
+        },
+        "soul_use3": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "soul_finished3"
           ]
         }
       }

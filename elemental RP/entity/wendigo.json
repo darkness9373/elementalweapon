@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "rex:wendigo",
+            "materials": {
+                "default": "enderman"
+            },
+            "textures": {
+                "kyros": "textures/entity/wendiglow"
+            },
+            "geometry": {
+                "kyros": "geometry.wendigo"
+            },
+            "animations": {
+                "controller_basic": "controller.animation.kyros_basic",
+                "look_at_target_default": "animation.humanoid.look_at_target.default",
+                "idle": "animation.wendigo.diam",
+                "walk": "animation.wendigo.walk",
+                "run": "animation.vulkran.run"
+            },
+            "particle_effects": {
+                "sundsoul": "rex:sundsoul",
+                "aumansoul": "rex:aumansoul"
+            },
+            "sound_effects": {
+                "wendiattack": "items.wendiattack",
+                "wendislam": "items.wendislam",
+                "wendislam2": "items.wendislam2",
+                "roaran": "items.roaran",
+                "emerge": "items.emerge"
+            },
+            "scripts": {
+                "animate": [
+                    "controller_basic",
+                    "look_at_target_default"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.kyros"
+            ]
+        }
+    }
+}

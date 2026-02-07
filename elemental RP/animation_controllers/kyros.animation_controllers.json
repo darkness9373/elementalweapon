@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.kyros_basic": {
+			"initial_state": "default2",
+			"states": {
+				"default2": {
+					"animations": ["idle"],
+					"transitions": [
+						{"move": "query.is_moving"}
+					]
+				},
+				"move": {
+					"animations": [
+						{"run": "query.modified_move_speed >= 1.01"},
+						{"walk": "query.modified_move_speed <= 1"}
+					],
+					"transitions": [
+						{"default2": "!query.is_moving"}
+					]
+				},
+				"default": {}
+			}
+		}
+	}
+}

@@ -17,6 +17,9 @@
             },
             {
               "ice_use1": "(query.get_equipped_item_name == 'ice') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
+            },
+            {
+              "soul_use1": "(query.get_equipped_item_name == 'soul') && (!query.is_sneaking) && (variable.attack_time) && (query.is_jumping)"
             }
           ],
           "on_exit": [
@@ -61,6 +64,16 @@
           ],
           "animations": [
             "ice_finished1"
+          ]
+        },
+        "soul_use1": {
+          "transitions": [
+            {
+              "default": "(query.all_animations_finished)"
+            }
+          ],
+          "animations": [
+            "soul_finished1"
           ]
         }
       }

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rex:wendigodeath",
+      "materials": {
+        "default": "enderman"
+      },
+      "textures": {
+        "default": "textures/entity/wendiglow"
+      },
+      "geometry": {
+        "default": "geometry.wendigo"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+              "move": "query.is_alive"
+          }
+        ]
+      },
+      "animations": {
+        "move": "animation.wendigo.mati"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

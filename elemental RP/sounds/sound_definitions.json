@@ -350,6 +350,83 @@
 			"sounds": [
 				"sounds/ultisoul1"
 			]
+		},
+		"items.soul1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/soul1"
+			]
+		},
+		"items.emerge": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/emerge"
+			]
+		},
+		"items.roaran": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/roaran"
+			]
+		},
+		"items.wendiattack": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/wendiattack"
+			]
+		},
+		"items.wendislam": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/wendislam"
+			]
+		},
+		"items.wendislam2": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/wendislam2"
+			]
+		},
+		"items.isoaw": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/isoaw"
+			]
+		},
+		"items.pinix": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/pinix"
+			]
+		},
+		"items.purifi": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/purifi"
+			]
+		},
+		"items.flamor1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/flamor1"
+			]
+		},
+		"items.shadoimp": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/shadoimp"
+			]
 		}
 	}
 }

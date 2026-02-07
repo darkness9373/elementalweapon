@@ -1067,3 +1067,4 @@ execute at @e[type=drp:soul,tag=drop] run give @a[r=1,c=1] rex:soul
 execute at @e[type=drp:soul,tag=drop] run execute at @a[r=1,c=1] run event entity @e[type=drp:soul,r=1] despawn
 execute at @e[type=minecraft:item,name="Soul Staff",c=1] run summon drp:soul ^ ^1.5 ^1.5
 execute at @e[type=drp:soul] run kill @e[type=minecraft:item,name="Soul Staff",c=1]
+

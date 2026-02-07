@@ -1,0 +1,246 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item.soul": {
+      "animation_length": 4.4,
+      "loop": false,
+      "timeline": {
+        "0.0": [ 
+          "/tag @s add sulp",
+          "/playanimation @s animation.soul.skill1",
+          "/title @s actionbar §l§sSoul Rift Stomp",
+          "/playsound items.soul1 @a[r=30]"
+        ],
+        "0.5": [
+          "/particle rex:soulprek2",
+          "/particle rex:ledakcsoul ~~~"
+        ],
+        "0.6": [
+          "/effect @e[r=11,family=!damage,tag=!sulp,family=!proj,type=!item,type=!armor_stand,type=!xp_orb] slowness 2 2 true",
+          "/damage @e[r=11,family=!damage,tag=!sulp,family=!proj,type=!item,type=!armor_stand,type=!xp_orb] 8 magic entity @s"
+        ],
+        "2.3": [
+          "/tag @s remove sulp"
+        ],
+        "4.3": [
+          "/title @s actionbar §l§s(Soul Rift Stomp) Ready"
+        ]
+      }
+    },
+    "animation.item.soul1": {
+      "animation_length": 5.3,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @s actionbar §l§sSoul Escape",
+          "/particle rex:soulbes ~~~",
+          "/playsound items.mju @a[r=30]",
+          "/tag @s add kabar",
+          "/effect @e[r=6,tag=!,tag=!kabar] slowness 2 2 true",
+          "/effect @s speed 4 8 true",
+          "/effect @s invisibility 4 1 true",
+          "/effect @e[tag=kabar,r=5] darkness 4 3 true",
+          "/particle rex:soulimpactz"
+        ],
+        "3.2": [
+          "/tag @s remove kabar",
+          "/particle rex:soulimpact ~~~",
+          "/particle rex:soulbescil ~~~",
+          "/effect @s speed 0 0 true",
+          "/effect @s darkness 0 0 true",
+          "/effect @s invisibility 0 0 true"
+        ],
+        "5.2": [
+          "/title @s actionbar §l§s(Soul Escape) Ready"
+        ]
+      }
+    },
+    "animation.item.soul2": {
+      "animation_length": 24.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @s actionbar §l§sWinged Soul Watchers",
+          "/playanimation @s animation.soul.summon1",
+          "/particle rex:soulmasuk ~~~",
+          "/tag @s add soul"
+        ],
+        "0.1": [
+          "/inputpermission set @s movement disabled"
+        ],
+        "0.5": [
+          "/particle rex:soulmasuk ~~~",
+          "/particle rex:aumansoul ~~~"
+        ],
+        "0.75": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "1.0": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "1.25": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "1.5": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "1.75": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "2.0": [
+          "/particle rex:soulmasuk ~~~"
+        ],
+        "2.3": [
+          "/inputpermission set @s movement enabled"
+        ],
+        "2.4": [
+          "/summon rex:wingey ~-2~1~2",
+          "/playsound items.pinix @a[r=30]",
+          "/particle rex:soulimpas ~~~",
+          "/particle rex:soulbescil ~~~",
+          "/summon rex:wingey ~2~1~-2",
+          "/summon rex:wingey ~2~1~2"
+        ],
+        "12.7": [
+          "/tag @s remove soul"
+        ],
+        "24.4": [
+          "/title @s actionbar §l§s(Winged Soul Watchers) Ready"
+        ]
+      }
+    },
+    "animation.item.soul3": {
+      "animation_length": 13.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/tag @s add nyonyok",
+          "/tag @s add kabari",
+          "/particle rex:soulprek22 ~~~",
+          "/summon rex:upilet ~~~",
+          "/particle rex:soulbes ~~~",
+          "/title @s actionbar §l§sSoulflame Absolution"
+        ],
+        "0.1": [
+          "/playanimation @s animation.smoke.back_dash",
+          "/execute at @e[type=rex:upilet,c=1] run particle rex:soulbulata ~~~",
+          "/effect @e[r=6,tag=!kabari] slowness 2 1 true",
+          "/playsound items.jalan @a[r=30]",
+          "/execute as @s at @s anchored feet run summon custom:knockssw^^^1.2 facing ^^^1000"
+        ],
+        "1.0": [
+          "/tag @s remove kabari"
+        ],
+        "1.5": [
+          "/execute at @e[type=rex:upilet,c=1] run particle rex:soulnaik ~~~",
+          "/execute at @e[type=rex:upilet,c=1] run playsound items.purifi @a[r=30]"
+        ],
+        "1.7": [
+          "/execute at @e[type=rex:upilet,c=1] run damage @e[r=8,tag=!nyonyok,family=!damage,family=!proj,family=!soul,type=!item,type=!armor_stand,type=!xp_orb] 5 magic entity @s"
+        ],
+        "2.2": [
+          "/execute at @e[type=rex:upilet,c=1] run damage @e[r=8,tag=!nyonyok,family=!damage,family=!proj,family=!soul,type=!item,type=!armor_stand,type=!xp_orb] 5 magic entity @s"
+        ],
+        "2.7": [
+          "/execute at @e[type=rex:upilet,c=1] run damage @e[r=8,tag=!nyonyok,family=!damage,family=!proj,family=!soul,type=!item,type=!armor_stand,type=!xp_orb] 5 magic entity @s"
+        ],
+        "3.2": [
+          "/execute at @e[type=rex:upilet,c=1] run damage @e[r=8,tag=!nyonyok,family=!damage,family=!proj,family=!soul,type=!item,type=!armor_stand,type=!xp_orb] 5 magic entity @s"
+        ],
+        "3.7": [
+          "/execute at @e[type=rex:upilet,c=1] run damage @e[r=8,tag=!nyonyok,family=!damage,family=!proj,family=!soul,type=!item,type=!armor_stand,type=!xp_orb] 5 magic entity @s"
+        ],
+        "3.0": [
+          "/tag @s remove nyonyok"
+        ],
+        "13.4": [
+          "/title @s actionbar §l§s(Soulflame Absolution) Ready"
+        ]
+      }
+    },
+    "animation.item.soul4": {
+      "animation_length": 65.5,
+      "loop": false,
+      "timeline": {
+        "0.0": [
+          "/title @s actionbar §l§sRite of the Soul Beast",
+          "/effect @e[r=13] darkness 8 2 true",
+          "/particle rex:soulkeluar ~~~",
+          "/playanimation @s animation.soul.summon2",
+          "/tag @s add ultisoul"
+        ],
+        "0.1": [
+          "/execute as @s at @s anchored feet run summon rex:bulatsoul ^^8^14 facing ^^^1000",
+          "/inputpermission set @s movement disabled"
+        ],
+        "0.25": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "0.29":[
+          "/particle rex:soulnaiker"
+        ],
+        "0.5": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "0.75": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "1.0": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "1.25": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "1.5": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "1.75": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "2.0": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "2.25": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "2.5": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "2.75": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "3.0": [
+          "/execute at @e[type=rex:bulatsoul] run particle rex:soulbulat ~~~",
+          "/playsound items.isoaw @a[r=30]",
+          "/playsound items.puri @a[r=30]",
+          "/particle rex:soulkeluar ~~~",
+          "/execute at @e[type=rex:bulatsoul] run particle rex:soulpreks ~~~"
+        ],
+        "3.25": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "3.5": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "3.75": [
+          "/particle rex:soulkeluar ~~~"
+        ],
+        "4.1": [
+          "/execute at @e[type=rex:bulatsoul] run summon rex:wendigo ~~~ facing @s",
+          "/playsound items.emerge @a[r=30]",
+          "/particle rex:soulkeluar ~~~",
+          "/inputpermission set @s movement enabled"
+        ],
+        "7.73": [
+          "/playsound items.roaran @a[r=30]"
+        ],
+        "39.0": [
+          "/tag @s remove ultisoul"
+        ],
+        "69.4": [
+          "/title @s actionbar §l§s(Rite of the Soul Beast) Ready"
+        ]
+      }
+    }
+  }
+}
