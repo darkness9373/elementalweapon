@@ -315,6 +315,41 @@
 			"sounds": [
 				"sounds/hitice"
 			]
+		},
+		"items.summon1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/summon1"
+			]
+		},
+		"items.": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/"
+			]
+		},
+		"items.puri": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/puri"
+			]
+		},
+		"items.iownyou": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/iownyou"
+			]
+		},
+		"items.ultisoul1": {
+			"__use_legacy_max_distance": false,
+			"category": "player",
+			"sounds": [
+				"sounds/ultisoul1"
+			]
 		}
 	}
 }

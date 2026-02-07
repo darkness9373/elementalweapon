@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.souleng": {
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "rightArm": true
+                },
+                {
+                    "leftArm": false
+                }
+            ],
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "geometry": "geometry.souleng",
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
+}

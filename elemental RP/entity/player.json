@@ -20,7 +20,14 @@
                 "shadow": "geometry.shadow",
                 "bluf": "geometry.bluf",
                 "darkeng": "geometry.darkness",
-                "ueng": "geometry.ice"
+                "ueng": "geometry.ice",
+                "souleng": "geometry.soul"
+            },
+            "sound_effects": {
+                "summon1": "items.summon1",
+                "puri": "items.puri",
+                "ultisoul1": "items.ultisoul1",
+                "iownyou": "items.iownyou"
             },
             "particle_effects": {
                 "shadoslash1": "rex:shadoslash2",
@@ -40,7 +47,11 @@
                 "darknslash2": "rex:darknslash2",
                 "garap": "rex:garap",
                 "icear": "rex:icear",
-                "icecr": "rex:icecr"
+                "icecr": "rex:icecr",
+                "soullight": "rex:soullight",
+                "soulserap": "rex:soulserap",
+                "ledakcsoula": "rex:ledakcsoula",
+                "soullight1": "rex:soullight1"
             },
             "scripts": {
                 "scale": "0.9375",
@@ -64,37 +75,43 @@
                     "variable.shadow = query.get_equipped_item_name('main_hand') == 'shadow';",
                     "variable.blufeng = query.get_equipped_item_name('main_hand') == 'bluf';",
                     "variable.darkeng = query.get_equipped_item_name('main_hand') == 'darkn';",
-                    "variable.ueng = query.get_equipped_item_name('main_hand') == 'ice';"
+                    "variable.ueng = query.get_equipped_item_name('main_hand') == 'ice';",
+                    "variable.souleng = query.get_equipped_item_name('main_hand') == 'soul';"
                 ],
                 "animate": [
-                    {
-                        "root": "1.0"
-                    },
-                    {
-                        "base_controller": "1.0"
-                    },
-                    {
-                        "shadow": "variable.shadow && variable.is_first_person"
-                    },
-                    {
-                        "shadowac": "variable.shadow && !variable.is_first_person"
-                    },
-                    {
-                        "bluf": "variable.blufeng && variable.is_first_person"
-                    },
-                    {
-                        "blufac": "variable.blufeng && !variable.is_first_person"
-                    },
-                    {
-                        "darkn": "variable.darkeng && variable.is_first_person"
-                    },
-                    {
-                        "darknessac": "variable.darkeng && !variable.is_first_person"
-                    },
-                    {
-                        "iceac": "variable.ueng && !variable.is_first_person"
-                    }
-                ],
+                {
+                    "root": "1.0"
+                },
+                {
+                    "base_controller": "1.0"
+                },
+                {
+                    "shadow": "variable.shadow && variable.is_first_person"
+                },
+                {
+                    "shadowac": "variable.shadow && !variable.is_first_person"
+                },
+                {
+                    "bluf": "variable.blufeng && variable.is_first_person"
+                },
+                {
+                    "blufac": "variable.blufeng && !variable.is_first_person"
+                },
+                {
+                    "darkn": "variable.darkeng && variable.is_first_person"
+                },
+                {
+                    "darknessac": "variable.darkeng && !variable.is_first_person"
+                },
+                {
+                    "iceac": "variable.ueng && !variable.is_first_person"
+                },
+                {
+                    "soul": "variable.souleng && variable.is_first_person"
+                },
+                {
+                    "soulac": "variable.souleng && !variable.is_first_person"
+                }],
                 "variables": {
                     "variable.fp_melee_spear_use_attachable_rotation_z": "public",
                     "variable.tp_melee_spear_use_attachable_rotation_z": "public",
@@ -192,37 +209,44 @@
                 "ice_sneak_walk": "animation.ice.sneak_walk",
                 "ice_run": "animation.ice.run",
                 "ice_idle": "animation.ice.idle",
+                "soul": "animation.soul.fpp",
+                "soulac": "controller.animation.soulac",
+                "soul_sneak": "animation.soul.sneak",
+                "soul_sneak_walk": "animation.soul.sneak_walk",
+                "soul_idle": "animation.soul.idle",
                 "crawling.legs": "animation.player.crawl.legs"
             },
             "render_controllers": [
-                {
-                    "controller.render.shadow": "variable.shadow"
-                },
-                {
-                    "controller.render.blufeng": "variable.blufeng"
-                },
-                {
-                    "controller.render.darkeng": "variable.darkeng"
-                },
-                {
-                    "controller.render.ueng": "variable.ueng"
-                },
-                {
-                    "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
-                },
-                {
-                    "controller.render.player.third_person_spectator": "!variable.is_first_person && !variable.map_face_icon && query.is_spectator"
-                },
-                {
-                    "controller.render.player.first_person": "variable.is_first_person && !query.is_spectator"
-                },
-                {
-                    "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon && !query.is_spectator"
-                },
-                {
-                    "controller.render.player.map": "variable.map_face_icon"
-                }
-            ],
+            {
+                "controller.render.shadow": "variable.shadow"
+            },
+            {
+                "controller.render.blufeng": "variable.blufeng"
+            },
+            {
+                "controller.render.darkeng": "variable.darkeng"
+            },
+            {
+                "controller.render.ueng": "variable.ueng"
+            },
+            {
+                "controller.render.souleng": "variable.souleng"
+            },
+            {
+                "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
+            },
+            {
+                "controller.render.player.third_person_spectator": "!variable.is_first_person && !variable.map_face_icon && query.is_spectator"
+            },
+            {
+                "controller.render.player.first_person": "variable.is_first_person && !query.is_spectator"
+            },
+            {
+                "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon && !query.is_spectator"
+            },
+            {
+                "controller.render.player.map": "variable.map_face_icon"
+            }],
             "enable_attachables": true
         }
     }
