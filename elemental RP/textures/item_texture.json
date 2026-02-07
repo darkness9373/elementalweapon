@@ -11,6 +11,9 @@
     },
     "icy": {
       "textures": "textures/items/icy.png"
+    },
+    "soul": {
+      "textures": "textures/items/soul.png"
     }
   }
 }
