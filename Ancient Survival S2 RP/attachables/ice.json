@@ -22,20 +22,19 @@
 			},
 			"scripts": {
 				"animate": [
-			{
-				"hold_first_person": "c.is_first_person"
+				{
+					"hold_first_person": "c.is_first_person"
+				},
+				{
+					"hold_third_person": "!c.is_first_person"
+				},
+				{
+					"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')"
+				}]
 			},
-			{
-				"hold_third_person": "!c.is_first_person"
-		    },
-			{
-				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')"
-			}
-		]
-	},
 			"render_controllers": [
-				{"controller.render.default" : "q.is_item_name_any('slot.weapon.mainhand', 0, 'rex:ice')"},
-				{"controller.render.on_back" : "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')"}
+				{ "controller.render.default": "q.is_item_name_any('slot.weapon.mainhand', 0, 'rex:ice')" },
+				{ "controller.render.on_back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:ice')" }
 			]
 		}
 	}

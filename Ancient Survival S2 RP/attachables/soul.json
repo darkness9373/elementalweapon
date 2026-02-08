@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
-		"description": { 
+		"description": {
 			"identifier": "rex:soul",
 			"materials": {
 				"default": "enderman",
@@ -22,20 +22,19 @@
 			},
 			"scripts": {
 				"animate": [
-			{
-				"hold_first_person": "c.is_first_person"
+				{
+					"hold_first_person": "c.is_first_person"
+				},
+				{
+					"hold_third_person": "!c.is_first_person"
+				},
+				{
+					"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:soul')"
+				}]
 			},
-			{
-				"hold_third_person": "!c.is_first_person"
-		    },
-			{
-				"back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:soul')"
-			}
-		]
-	},
 			"render_controllers": [
-				{"controller.render.default" : "q.is_item_name_any('slot.weapon.mainhand', 0, 'rex:soul')"},
-				{"controller.render.on_back" : "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:soul')"}
+				{ "controller.render.default": "q.is_item_name_any('slot.weapon.mainhand', 0, 'rex:soul')" },
+				{ "controller.render.on_back": "q.is_item_name_any('slot.weapon.offhand', 0, 'rex:soul')" }
 			]
 		}
 	}
