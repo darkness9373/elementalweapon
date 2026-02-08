@@ -1,0 +1,40 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "§l§6Ancient Survival§r",
+		"description": "-",
+		"uuid": "1a951f78-1647-420f-b3f6-87fe1eab7363",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 0]
+	},
+	"metadata": {
+		"authors": ["Darkness9373"]
+	},
+	"modules": [
+	{
+		"description": "Behavior Pack",
+		"type": "data",
+		"uuid": "d6012a17-cfff-419e-9905-9fd3735d3378",
+		"version": [1, 0, 0]
+	},
+	{
+		"type": "script",
+		"language": "javascript",
+		"uuid": "7a21d3e7-699b-4761-9fe4-2ae58ea19a5b",
+		"entry": "scripts/main.js",
+		"version": [
+			1,
+			0,
+			0
+		]
+	}],
+	"dependencies": [
+	{
+		"module_name": "@minecraft/server",
+		"version": "2.3.0"
+	},
+	{
+		"module_name": "@minecraft/server-ui",
+		"version": "2.0.0"
+	}]
+}
