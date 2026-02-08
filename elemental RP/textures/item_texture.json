@@ -14,6 +14,18 @@
     },
     "soul": {
       "textures": "textures/items/soul.png"
+    },
+    "chaosr": {
+      "textures": "textures/items/armor/chaosr.png"
+    },
+    "kitsune": {
+      "textures": "textures/items/armor/kitsune.png"
+    },
+    "straw": {
+      "textures": "textures/items/armor/straw.png"
+    },
+    "steel": {
+      "textures": "textures/items/armor/steel.png"
     }
   }
 }

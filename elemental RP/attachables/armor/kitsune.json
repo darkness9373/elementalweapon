@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "rex:kitsune",
+			"materials": {
+				"default": "enderman",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/mask/kitsune",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"helmet": "geometry.kitsune"
+			},
+			"scripts": {
+				"parent_setup": "variable.chest_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.armor_helmet"
+			]
+		}
+	}
+}
