@@ -6,8 +6,7 @@
             "states": {
                 "idle": {
                     "animations": [
-                        "ice_idle",
-                        "ice_hold"
+                        "ice_idle"
                     ],
                     "transitions": [
                         {
@@ -21,8 +20,7 @@
                 },
                 "walking": {
                     "animations": [
-                        "ice_walk",
-                        "ice_hold"
+                        "ice_walk"
                     ],
                     "transitions": [
                         {
@@ -60,7 +58,7 @@
                             "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
                         },
                         {
-                            "snikwalking": "q.ground_speed > 0.4 && q.modified_move_speed"
+                            "snikwalking": "q.ground_speed > 0.4 && q.modified_move_speed && q.is_sneaking"
                         }
                     ],
                     "blend_transition": 0.2
