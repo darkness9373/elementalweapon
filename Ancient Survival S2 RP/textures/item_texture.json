@@ -1,31 +1,34 @@
 {
-  "texture_data": {
-    "shadow": {
-      "textures": "textures/items/shadow.png"
-    },
-    "bluf": {
-      "textures": "textures/items/bluf.png"
-    },
-    "darkn": {
-      "textures": "textures/items/darkn.png"
-    },
-    "icy": {
-      "textures": "textures/items/icy.png"
-    },
-    "soul": {
-      "textures": "textures/items/soul.png"
-    },
-    "chaosr": {
-      "textures": "textures/items/armor/chaosr.png"
-    },
-    "kitsune": {
-      "textures": "textures/items/armor/kitsune.png"
-    },
-    "straw": {
-      "textures": "textures/items/armor/straw.png"
-    },
-    "steel": {
-      "textures": "textures/items/armor/steel.png"
-    }
-  }
+	"texture_data": {
+		"shadow": {
+			"textures": "textures/items/shadow.png"
+		},
+		"bluf": {
+			"textures": "textures/items/bluf.png"
+		},
+		"darkn": {
+			"textures": "textures/items/darkn.png"
+		},
+		"icy": {
+			"textures": "textures/items/icy.png"
+		},
+		"soul": {
+			"textures": "textures/items/soul.png"
+		},
+		"chaosr": {
+			"textures": "textures/items/armor/chaosr.png"
+		},
+		"kitsune": {
+			"textures": "textures/items/armor/kitsune.png"
+		},
+		"straw": {
+			"textures": "textures/items/armor/straw.png"
+		},
+		"steel": {
+			"textures": "textures/items/armor/steel.png"
+		},
+		"darkro": {
+			"textures": "textures/items/armor/darkro.png"
+		}
+	}
 }

@@ -6,35 +6,31 @@
             "states": {
                 "idle": {
                     "animations": [
-                        "bluf_idle",
-                        "bluf_hold"
+                        "bluf_idle"
                     ],
                     "transitions": [
-                        {
-                            "walking": "q.ground_speed > 0.5 && q.modified_move_speed && !q.is_sneaking"
-                        },
-                        {
-                            "sneaking": "q.is_sneaking"
-                        }
-                    ],
+                    {
+                        "walking": "q.ground_speed > 0.1 && !q.is_sneaking && !q.is_sprinting"
+                    },
+                    {
+                        "sneaking": "q.is_sneaking"
+                    }],
                     "blend_transition": 0.2
                 },
                 "walking": {
                     "animations": [
-                        "bluf_walk",
-                        "bluf_hold"
+                        "bluf_walk"
                     ],
                     "transitions": [
-                        {
-                            "idle": "q.ground_speed < 0.5 && !q.is_sneaking"
-                        },
-                        {
-                            "sneaking": "q.is_sneaking"
-                        },
-                        {
-                            "Running": "q.modified_move_speed && q.is_sprinting"
-                        }
-                    ],
+                    {
+                        "idle": "q.ground_speed < 0.5 && !q.is_sneaking"
+                    },
+                    {
+                        "sneaking": "q.is_sneaking"
+                    },
+                    {
+                        "Running": "q.is_sprinting"
+                    }],
                     "blend_transition": 0.2
                 },
                 "Running": {
@@ -42,13 +38,12 @@
                         "bluf_run"
                     ],
                     "transitions": [
-                        {
-                            "walking": "q.ground_speed < 3.9 && !q.is_sprinting"
-                        },
-                        {
-                            "sneaking": "q.is_sneaking"
-                        }
-                    ],
+                    {
+                        "walking": "q.ground_speed < 3.9 && !q.is_sprinting"
+                    },
+                    {
+                        "sneaking": "q.is_sneaking"
+                    }],
                     "blend_transition": 0.4
                 },
                 "sneaking": {
@@ -56,13 +51,12 @@
                         "bluf_sneak"
                     ],
                     "transitions": [
-                        {
-                            "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
-                        },
-                        {
-                            "snikwalking": "q.ground_speed > 0.4 && q.modified_move_speed"
-                        }
-                    ],
+                    {
+                        "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
+                    },
+                    {
+                        "snikwalking": "q.is_sneaking && q.ground_speed > 0.1"
+                    }],
                     "blend_transition": 0.2
                 },
                 "snikwalking": {
@@ -70,16 +64,15 @@
                         "bluf_sneak_walk"
                     ],
                     "transitions": [
-                        {
-                            "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
-                        },
-                        {
-                            "Running": "q.modified_move_speed && q.is_sprinting"
-                        },
-                        {
-                            "walking": "q.ground_speed > 0.5 && !q.is_sneaking"
-                        }
-                    ],
+                    {
+                        "idle": "q.ground_speed < 0.4 && !q.is_sneaking"
+                    },
+                    {
+                        "Running": "q.modified_move_speed && q.is_sprinting"
+                    },
+                    {
+                        "walking": "q.ground_speed > 0.5 && !q.is_sneaking"
+                    }],
                     "blend_transition": 0.2
                 }
             }

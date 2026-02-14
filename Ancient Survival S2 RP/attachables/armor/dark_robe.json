@@ -2,17 +2,17 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "rex:soulchaos_robe",
+			"identifier": "rex:dark_robe",
 			"materials": {
 				"default": "enderman",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
-				"default": "textures/armor/soulinferno",
+				"default": "textures/armor/dark_robe",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"chest": "geometry.inferno"
+				"chest": "geometry.dark_robe"
 			},
 			"scripts": {
 				"parent_setup": "variable.chest_layer_visible = 0.0;"

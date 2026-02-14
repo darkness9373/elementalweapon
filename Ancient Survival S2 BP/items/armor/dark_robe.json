@@ -2,7 +2,7 @@
 	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "rex:soulchaos_robe",
+			"identifier": "rex:dark_robe",
 			"menu_category": {
 			   "category": "equipment",
 			   "group": "itemGroup.name.chestplate"
@@ -15,7 +15,7 @@
 				"slot": "armor_torso"
 			},
 			"minecraft:icon": {
-				"texture": "chaosr"
+				"texture": "darkro"
 			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
@@ -25,7 +25,7 @@
 				"parent": "itemGroup.name.chestplate"
 			},
 			"minecraft:display_name": {
-				"value": "§rSoulChaos Chestplate\n\n§r§l§5[ Sebelum menggunakannya, pastikan kamu tidak memegang Elemental Weapon apa pun. ]"
+				"value": "§rDarkness Chestplate\n\n§r§l§5[ Before using this, make sure you dont hold any elemental weapons ]"
 			}
 		}
 	}

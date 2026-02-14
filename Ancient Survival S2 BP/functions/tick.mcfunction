@@ -1,7 +1,6 @@
 #run tick
 gamerule commandblockoutput false
 gamerule sendcommandfeedback false
-scoreboard players add @a[scores={attack_delay=..120}] attack_delay 1
 scoreboard objectives add attack_delay dummy
 scoreboard objectives add antiattack dummy
 scoreboard objectives add hu dummy
@@ -19,6 +18,7 @@ scoreboard players add @e[type=rex:ku,tag=kukun] tac 1
 scoreboard players add @e[type=rex:ku] waktu 1
 scoreboard players add @e[type=rex:wendigo] wendideath 1
 scoreboard players add @e[tag=bescil] waktu 1
+scoreboard players add @a[scores={attack_delay=..120}] attack_delay 1
 
 execute as @e[tag=itas] at @s run playanimation @s animation.mun.lari
 
@@ -86,7 +86,9 @@ execute at @e[type=rex:tinjublu] run damage @e[r=3,tag=!tinju] 4 entity_attack e
 execute at @e[tag=kbg] run particle rex:kobongbiru~~~
 damage @e[tag=kbg] 2 fire
 
-execute as @e[type=rex:1mode] at @s run tp @s ^^0.1^2 false
+
+execute as @e[type=rex:1mode] at @s run execute if block ^^^1 air run tp @s ^^0.1^2 false
+# execute as @e[type=rex:1mode] at @s run tp @s ^^0.1^2 false
 execute as @e[type=rex:1mode] at @s run tp @e[r=5,family=!damage,tag=!tinju] @s
 execute as @e[type=rex:1mode] at @s run damage @e[r=5,tag=!tinju,family=!damage] 8 projectile entity @e[c=1,tag=tinju]
 execute at @e[type=rex:1mode] run particle rex:bluimpekmode1
@@ -199,7 +201,7 @@ execute as @e[type=rex:arroic] at @s if entity @e[rm=0.1,family=!proj,tag=!fss,r
 
 playanimation @e[type=rex:arroic] animation.rotate n 10000
 
-execute at @e[type=rex:icrat] run damage @e[r=10,tag=!njas,type=!item,type=!armor_stand,type=!xp_orb] 2 entity_attack entity @e[c=1,tag=njas]
+execute at @e[type=rex:icrat] run damage @e[r=10,tag=!njas,type=!item,type=!armor_stand,type=!xp_orb] 2 projectile entity @e[c=1,tag=njas]
 
 execute at @e[tag=slide] run particle rex:iceslide2 ~~~
 

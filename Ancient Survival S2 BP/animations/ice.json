@@ -115,7 +115,7 @@
           "/summon rex:iced"
         ],
         "11.3": [
-          "/damage @e[r=40,tag=!rutg,type=!item,type=!armor_stand,type=!xp_orb] 30 entity_attack entity @s",
+          "/damage @e[r=40,tag=!rutg,type=!item,type=!armor_stand,type=!xp_orb] 30 magic entity @s",
           "/particle rex:icesnow",
           "/effect @e[r=20,tag=!rutg,type=!item,type=!armor_stand,type=!xp_orb] slowness 4 4 true"
         ],
